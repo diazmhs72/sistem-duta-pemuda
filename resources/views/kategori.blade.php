@@ -44,7 +44,7 @@
 
       <style>
           html {
-              overflow-y: scroll;
+              height: 100% !important;
           }
 
           body {
@@ -52,10 +52,11 @@
               color: #000;
               overflow-x: hidden;
               overflow-y: auto;
-              min-height: 100vh;
+              height: 100%;
               background-color: #fff;
               background-repeat: no-repeat;
               background-size: cover;
+              /* margin-top: 6rem */
           }
 
           .card {
@@ -64,10 +65,6 @@
               margin-bottom: 60px;
               border: 1px solid rgba(0, 0, 0, 0.2) !important;
               box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2)
-          }
-
-          .blue-text {
-              color: #00BCD4
           }
 
           .form-control-label h6 {
@@ -86,6 +83,10 @@
               font-weight: 300
           }
 
+          /* .btn {
+              width: 100% !important;
+          } */
+
           input:focus,
           textarea:focus {
               -moz-box-shadow: none !important;
@@ -95,6 +96,25 @@
               outline-width: 0;
               font-weight: 400
           }
+
+          /* .btn-block {
+              text-transform: uppercase;
+              font-size: 15px !important;
+              font-weight: 400;
+              height: 43px;
+              cursor: pointer
+          }
+
+          .btn-block:hover {
+              color: #fff !important
+          } */
+
+          /* button:focus {
+              -moz-box-shadow: none !important;
+              -webkit-box-shadow: none !important;
+              box-shadow: none !important;
+              outline-width: 0
+          } */
 
           select.form-control {
               padding: 8px 15px;
@@ -126,6 +146,16 @@
               margin-bottom: 7px;
               text-align: justify;
               margin-left: 7px;
+          }
+
+          .program-item {
+              background-color: #f8f9fa;
+              border-radius: 30px;
+              padding: 15px;
+              margin-bottom: 10px;
+              cursor: pointer;
+              transition: all 0.3s ease;
+              border: 4px solid #3498db;
           }
       </style>
 
@@ -227,128 +257,39 @@
           <!--/ End Header Inner -->
       </header>
 
+      {{-- start ketegori --}}
+      <div class="container-fluid px-1 py-5 mx-auto">
+          <div class="row d-flex justify-content-center">
+              <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+                  <div class="card" style="border-radius: 15px;">
+                      <div class="card-body py-4 text-left">
+                          <h2 class="text-center">Pilih Kategori</h2>
+                          <h6 class="text-muted text-center mb-5">Pilih program yang kamu inginkan.</h6>
+                          {{-- kolom kategori --}}
+                          <div class="mx-sm-5">
+                              <div class="program-item mb-5 d-flex flex-row align-items-center"
+                                  onclick="window.location.href='pendaftaran'">
+                                  <img src="img/logo_pp.png" alt="" width="72px">
+                                  <h5>Pertukaran Pemuda Antar Provinsi (PPAP)</h5>
+                              </div>
 
-      <div class="d-flex align-items-center">
-          <div class="container">
-              <div class="row d-flex justify-content-center align-items-center">
-                  <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-                      <div class="card mt-5" style="border-radius: 15px;">
+                              <div class="program-item mb-5 d-flex flex-row align-items-center">
+                                  <img src="img/logo_pp.png" alt="" width="72px">
+                                  <h5>Pertukaran Pemuda Antar Provinsi (PPAP)</h5>
+                              </div>
 
-                          <div class="card-body py-4 px-lg-5 px-sm-4 px-2">
-                              <h2 class=" text-center mb-5">Registrasi akun</h2>
-
-                              <form class="needs-validate" novalidate>
-
-                                  <div data-mdb-input-init class="form-outline mb-4">
-                                      <label class="form-control-label" for="form3Example1cg">Nama</label>
-                                      <input type="text" id="form3Example1cg"
-                                          class="form-control form-control-lg" />
-                                  </div>
-
-                                  <div data-mdb-input-init class="form-outline mb-4">
-                                      <label class="form-control-label" for="form3Example3cg">Email</label>
-                                      <input type="email" id="form3Example3cg"
-                                          class="form-control form-control-lg" />
-                                  </div>
-
-                                  <div data-mdb-input-init class="form-outline mb-4">
-                                      <label class="form-control-label" for="form3Example4cg">Password</label>
-                                      <input type="password" id="form3Example4cg"
-                                          class="form-control form-control-lg" />
-                                  </div>
-
-                                  <div data-mdb-input-init class="form-outline mb-4">
-                                      <label class="form-control-label" for="form3Example4cdg">Konfirmasi
-                                          password</label>
-                                      <input type="password" id="form3Example4cdg"
-                                          class="form-control form-control-lg" />
-                                  </div>
-
-                                  <div class="d-flex justify-content-center flex-column">
-                                      <button class="btn" style="width: 100%"
-                                          onclick="window.location.href='{{ route('pendaftaran') }}'">Daftar</button>
-                                      <button class="btn-light"
-                                          style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.2)"><img
-                                              src="img/google.png" class="mr-2" alt="" width="32px"
-                                              onclick="window.location.href='{{ route('pendaftaran') }}'">Daftar
-                                          dengan
-                                          google</button>
-                                  </div>
-
-                                  <p
-                                      class="text-center
-                                              text-muted mt-3 mb-0">
-                                      Sudah punya akun? <a href="#!"
-                                          class="fw-bold text-body text-primary"><u>Login
-                                              disini</u></a></p>
-
-                              </form>
-
+                              <div class="program-item mb-5 d-flex flex-row align-items-center">
+                                  <img src="img/logo_pp.png" alt="" width="72px">
+                                  <h5>Pertukaran Pemuda Antar Provinsi (PPAP)</h5>
+                              </div>
                           </div>
                       </div>
                   </div>
+
+
               </div>
           </div>
       </div>
-
-      </div>
-
-
-
-      <script>
-          function validate(val) {
-              const nama = document.getElementById("nama_lengkap");
-              const email = document.getElementById("email");
-              const whatsapp = document.getElementById("whatsapp");
-              const nik = document.getElementById("nik");
-              const kecamatan = document.getElementById("kecamatan");
-              const rt = document.getElementById("rt");
-              const rw = document.getElementById("rw");
-              const desa_kelurahan = document.getElementById("desa_kelurahan");
-              const link_proposal = document.getElementById("link_proposal");
-              const foto_ktp = document.getElementById("foto_ktp");
-
-              let flag = true;
-
-              const fields = [
-                  [1, nama],
-                  [2, kecamatan, rt, rw, desa_kelurahan],
-                  [3, email, link_proposal],
-                  [4, whatsapp]
-              ];
-
-              fields.forEach(([group, ...elements]) => {
-                  if (val >= group || val === 0) {
-                      elements.forEach(el => {
-                          if (el && el.value === "") {
-                              el.style.borderColor = "red";
-                              flag = false;
-                          } else if (el) {
-                              el.style.borderColor = "green";
-                          }
-                      });
-                  }
-              });
-
-              if ((val >= 3 || val === 0) && foto_ktp && foto_ktp.files.length === 0) {
-                  foto_ktp.style.borderColor = "red";
-                  flag = false;
-              } else if (foto_ktp) {
-                  foto_ktp.style.borderColor = "green";
-              }
-
-              return flag;
-
-
-              $(document).ready(function() {
-                  $('.select2').select2({
-                      width: '100%'
-                  });
-              });
-
-
-          }
-      </script>
 
       <!-- jQuery Min JS -->
       <script src="{{ asset('js/jquery.min.js') }}"></script>
@@ -390,37 +331,6 @@
       <script src="{{ asset('js/bootstrap.min.js') }}"></script>
       <!-- Main JS -->
       <script src="{{ asset('js/main.js') }}"></script>
-
-      <script>
-          $('#myForm').on('submit', function(event) {
-          event.preventDefault();
-
-          let form = this;
-          const checkBox = document.getElementById("invalidCheck");
-          let isValid = form.checkValidity();
-
-          // Tampilkan alert jika form tidak valid atau checkbox tidak dicentang
-          if (!isValid) {
-              $('#alert-warning-2').removeClass('d-none');
-          } else {
-              $('#alert-warning-2').addClass('d-none');
-          }
-
-          // Jika checkbox tidak dicentang, tambahkan pesan khusus
-          if (!isValid) {
-              $('#alert-warning-2').text("Silakan lengkapi data Anda.");
-          }
-
-          if (isValid && checkBox.checked) {
-              form.submit();
-          } else {
-              form.classList.add('was-validated');
-          }
-          });
-          });
-      </script>
-
-
 
   </body>
 
