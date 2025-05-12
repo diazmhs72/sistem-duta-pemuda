@@ -14,7 +14,7 @@
     <title>Mediplus - Free Medical and Doctor Directory HTML Template.</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="img/favicon.png" />
+    <link rel="icon" href="img/favicon1.png" />
 
     <!-- Google Fonts -->
     <link
@@ -123,7 +123,7 @@
                         <div class="col-lg-3 col-md-3 col-12">
                             <!-- Start Logo -->
                             <div class="logo">
-                                <a href="index.html"><img src="img/logo.png" alt="#" /></a>
+                                <a href="index.html"><img src="img/logo1.png" width="65%" alt="#" /></a>
                             </div>
                             <!-- End Logo -->
                             <!-- Mobile Nav -->
@@ -1126,20 +1126,24 @@
                                 <div class="col-lg-6 col-md-6 col-12">
                                     <ul>
                                         <li>
-                                            <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a>
+                                            <a href="#"><i class="fa fa-caret-right"
+                                                    aria-hidden="true"></i>Home</a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a>
+                                            <a href="#"><i class="fa fa-caret-right"
+                                                    aria-hidden="true"></i>About Us</a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a>
+                                            <a href="#"><i class="fa fa-caret-right"
+                                                    aria-hidden="true"></i>Services</a>
                                         </li>
                                         <li>
                                             <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Our
                                                 Cases</a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Other
+                                            <a href="#"><i class="fa fa-caret-right"
+                                                    aria-hidden="true"></i>Other
                                                 Links</a>
                                         </li>
                                     </ul>
@@ -1151,17 +1155,20 @@
                                                     aria-hidden="true"></i>Consuling</a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Finance</a>
+                                            <a href="#"><i class="fa fa-caret-right"
+                                                    aria-hidden="true"></i>Finance</a>
                                         </li>
                                         <li>
                                             <a href="#"><i class="fa fa-caret-right"
                                                     aria-hidden="true"></i>Testimonials</a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a>
+                                            <a href="#"><i class="fa fa-caret-right"
+                                                    aria-hidden="true"></i>FAQ</a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact
+                                            <a href="#"><i class="fa fa-caret-right"
+                                                    aria-hidden="true"></i>Contact
                                                 Us</a>
                                         </li>
                                     </ul>
