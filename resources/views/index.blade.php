@@ -18,8 +18,8 @@
 
     <!-- Google Fonts -->
     <link
-        href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
-        rel="stylesheet" />
+        href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" />
@@ -1126,24 +1126,21 @@
                                 <div class="col-lg-6 col-md-6 col-12">
                                     <ul>
                                         <li>
-                                            <a href="#"><i class="fa fa-caret-right"
-                                                    aria-hidden="true"></i>Home</a>
+                                            <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="fa fa-caret-right"
-                                                    aria-hidden="true"></i>About Us</a>
+                                            <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="fa fa-caret-right"
-                                                    aria-hidden="true"></i>Services</a>
+                                            <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a>
                                         </li>
                                         <li>
                                             <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Our
                                                 Cases</a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="fa fa-caret-right"
-                                                    aria-hidden="true"></i>Other Links</a>
+                                            <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Other
+                                                Links</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -1154,20 +1151,18 @@
                                                     aria-hidden="true"></i>Consuling</a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="fa fa-caret-right"
-                                                    aria-hidden="true"></i>Finance</a>
+                                            <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Finance</a>
                                         </li>
                                         <li>
                                             <a href="#"><i class="fa fa-caret-right"
                                                     aria-hidden="true"></i>Testimonials</a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="fa fa-caret-right"
-                                                    aria-hidden="true"></i>FAQ</a>
+                                            <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="fa fa-caret-right"
-                                                    aria-hidden="true"></i>Contact Us</a>
+                                            <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact
+                                                Us</a>
                                         </li>
                                     </ul>
                                 </div>
