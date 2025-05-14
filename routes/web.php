@@ -29,6 +29,10 @@ Route::get('/kategori', function () {
     return view('kategori');
 })->name('kategori');
 
+Route::get('/index', function () {
+    return view('index');
+})->name('index');
+
 Route::get('/admin', function () {
     return view('admin/index');
 })->name('admin');

@@ -107,23 +107,23 @@
                                 <nav class="navigation">
                                     <ul class="nav menu">
                                         <li class="{{ request()->is('/') ? 'active' : '' }}">
-                                            <a href="{{ route('home') }}">Home</a>
+                                            <a href="{{ route('home') }}">Beranda</a>
                                         </li>
                                         <li class="{{ request()->is('doctors*') ? 'active' : '' }}">
-                                            <a href="#">Doctors</a>
+                                            <a href="#">Kategori</a>
                                         </li>
                                         <li class="{{ request()->is('services*') ? 'active' : '' }}">
-                                            <a href="#">Services</a>
+                                            <a href="#">Alur seleksi</a>
                                         </li>
                                         <li class="{{ request()->is('pages*') ? 'active' : '' }}">
-                                            <a href="#">Pages</a>
+                                            <a href="#">Berita</a>
                                         </li>
-                                        <li class="{{ request()->is('blogs*') ? 'active' : '' }}">
+                                        {{-- <li class="{{ request()->is('blogs*') ? 'active' : '' }}">
                                             <a href="#">Blogs</a>
                                         </li>
                                         <li class="{{ request()->is('contact*') ? 'active' : '' }}">
                                             <a href="#">Contact Us</a>
-                                        </li>
+                                        </li> --}}
                                     </ul>
                                 </nav>
                             </div>

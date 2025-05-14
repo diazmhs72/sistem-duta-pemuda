@@ -704,7 +704,7 @@ body {
     position: relative;
     text-align: left;
     z-index: 3;
-    border-radius: 5px;
+    border-radius: 30px;
     background: #1a76d1;
     -webkit-transition: all 0.3s ease-out 0s;
     -moz-transition: all 0.3s ease-out 0s;
