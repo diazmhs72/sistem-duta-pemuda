@@ -17,7 +17,7 @@
                                 </h1>
                                 <p><a href="#">Info Selengkapnya >></a></p>
                                 <div class="button">
-                                    <a href="{{ route('kategori') }}" class="btn">DAFTAR SEKARANG</a>
+                                    <a href="{{ route('kategori') }}" class="btn">Isi Formulir</a>
                                 </div>
                             </div>
                         </div>
@@ -37,8 +37,7 @@
                                 </h1>
                                 <p><a href="#">Info Selengkapnya >></a></p>
                                 <div class="button">
-                                    <a href="{{ route('register') }}" class="btn">DAFTAR</a>
-                                    <a href="auth/login.php" class="btn primary">LOGIN</a>
+                                    <a href="{{ route('kategori') }}" class="btn">Isi Formulir</a>
                                 </div>
                             </div>
                         </div>
@@ -58,8 +57,7 @@
                                 </h1>
                                 <p><a href="#">Info Selengkapnya >></a></p>
                                 <div class="button">
-                                    <a href="#" class="btn">DAFTAR</a>
-                                    <a href="#" class="btn primary">LOGIN</a>
+                                    <a href="{{ route('kategori') }}" class="btn">Isi Formulir</a>
                                 </div>
                             </div>
                         </div>
