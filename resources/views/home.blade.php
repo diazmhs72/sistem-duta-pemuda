@@ -17,7 +17,7 @@
                                 </h1>
                                 <p><a href="#">Info Selengkapnya >></a></p>
                                 <div class="button">
-                                    <a href="{{ route('kategori') }}" class="btn">Isi Formulir</a>
+                                    <a href="{{ route('kategori') }}" class="btn">Daftar Sekarang</a>
                                 </div>
                             </div>
                         </div>
@@ -37,7 +37,7 @@
                                 </h1>
                                 <p><a href="#">Info Selengkapnya >></a></p>
                                 <div class="button">
-                                    <a href="{{ route('kategori') }}" class="btn">Isi Formulir</a>
+                                    <a href="{{ route('kategori') }}" class="btn">Daftar Sekarang</a>
                                 </div>
                             </div>
                         </div>
@@ -57,7 +57,7 @@
                                 </h1>
                                 <p><a href="#">Info Selengkapnya >></a></p>
                                 <div class="button">
-                                    <a href="{{ route('kategori') }}" class="btn">Isi Formulir</a>
+                                    <a href="{{ route('kategori') }}" class="btn">Daftar Sekarang</a>
                                 </div>
                             </div>
                         </div>
@@ -79,18 +79,7 @@
                         <!-- single-schedule -->
                         <div class="single-schedule first">
                             <div class="inner">
-                                <div class="icon">
-                                    <i class="fa fa-ambulance"></i>
-                                </div>
-                                <div class="single-content">
-                                    <span>PP</span>
-                                    <h4>Pemuda Pelopor</h4>
-                                    <p>
-                                        Pemuda pelopor adalah pemuda yang mempelopori suatu
-                                        kebijakan tertentu yang keren
-                                    </p>
-                                    <a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
-                                </div>
+                                <img src="img\pp.png" style="width: 100%">
                             </div>
                         </div>
                     </div>
