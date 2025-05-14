@@ -7,8 +7,8 @@ Route::get('/formppan', function () {
 });
 
 Route::get('/', function () {
-    return view('index');
-})->name('index');
+    return view('home');
+})->name('home');
 
 Route::get('/formpp', function () {
     return view('formPp');
@@ -20,7 +20,7 @@ Route::get('/register', function () {
 
 Route::get('/login', function () {
     return view('auth/login');
-});
+})->name('login');
 Route::get('/pendaftaran', function () {
     return view('formPp');
 })->name('pendaftaran');
@@ -28,3 +28,7 @@ Route::get('/pendaftaran', function () {
 Route::get('/kategori', function () {
     return view('kategori');
 })->name('kategori');
+
+Route::get('/admin', function () {
+    return view('admin/index');
+})->name('admin');
