@@ -13,8 +13,13 @@
   <!-- Title -->
   <title>Duta Pemuda Tangerang Selatan</title>
 
+<<<<<<< HEAD
   <!-- Favicon -->
   <link rel="icon" href="img/favicon.png" />
+=======
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon1.png" />
+>>>>>>> bb363a82ebf0c749c9e7b7874839725733ff59d5
 
   <!-- Google Fonts -->
   <link
@@ -115,6 +120,7 @@
           </div>
         </div>
       </div> -->
+<<<<<<< HEAD
     <!-- Header Inner -->
     <div class="header-inner">
       <div class="container">
@@ -129,6 +135,321 @@
               <!-- Mobile Nav -->
               <div class="mobile-nav"></div>
               <!-- End Mobile Nav -->
+=======
+        <!-- Header Inner -->
+        <div class="header-inner">
+            <div class="container">
+                <div class="inner">
+                    <div class="row">
+                        <div cla;ss="col-lg-3 col-md-3 col-12">
+                            <!-- Start Logo -->
+                            <div class="logo">
+                                <a href="index.html"><img src="img/logo1.png" width="65%" alt="#" /></a>
+                            </div>
+                            <!-- End Logo -->
+                            <!-- Mobile Nav -->
+                            <div class="mobile-nav"></div>
+                            <!-- End Mobile Nav -->
+                        </div>
+                        <div class="col-lg-7 col-md-9 col-12">
+                            <!-- Main Menu -->
+                            <div class="main-menu">
+                                <nav class="navigation">
+                                    <ul class="nav menu">
+                                        <li class="active">
+                                            <a href="#">Home <i class="icofont-rounded-down"></i></a>
+                                            <ul class="dropdown">
+                                                <li><a href="index.html">Home Page 1</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Doctos </a></li>
+                                        <li><a href="#">Services </a></li>
+                                        <li>
+                                            <a href="#">Pages <i class="icofont-rounded-down"></i></a>
+                                            <ul class="dropdown">
+                                                <li><a href="404.html">404 Error</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Blogs <i class="icofont-rounded-down"></i></a>
+                                            <ul class="dropdown">
+                                                <li><a href="blog-single.html">Blog Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!--/ End Main Menu -->
+                        </div>
+                        <div class="col-lg-2 col-12">
+                            <div class="get-quote">
+                                <a href="appointment.html" class="btn">Book Appointment</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End Header Inner -->
+    </header>
+    <!-- End Header Area -->
+
+    <!-- Slider Area -->
+    <section class="slider">
+        <div class="hero-slider">
+            <!-- Start Single Slider -->
+            <div class="single-slider" style="background-image: url('img/slider2.jpg')">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="text">
+                                <h1>
+                                    SELEKSI PPAN & PPAP TINGKAT KOTA TANGERANG SELATAN TAHUN
+                                    2025
+                                </h1>
+                                <p><a href="#">Info Selengkapnya >></a></p>
+                                <div class="button">
+                                    <a href="{{ route('kategori') }}" class="btn">DAFTAR SEKARANG</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Single Slider -->
+            <!-- Start Single Slider -->
+            <div class="single-slider" style="background-image: url('img/slider.jpg')">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="text">
+                                <h1>
+                                    SELEKSI PPAN & PPAP TINGKAT KOTA TANGERANG SELATAN TAHUN
+                                    2025
+                                </h1>
+                                <p><a href="#">Info Selengkapnya >></a></p>
+                                <div class="button">
+                                    <a href="{{ route('register') }}" class="btn">DAFTAR</a>
+                                    <a href="#" class="btn primary">LOGIN</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Start End Slider -->
+            <!-- Start Single Slider -->
+            <div class="single-slider" style="background-image: url('img/slider3.jpg')">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="text">
+                                <h1>
+                                    SELEKSI PPAN & PPAP TINGKAT KOTA TANGERANG SELATAN TAHUN
+                                    2025
+                                </h1>
+                                <p><a href="#">Info Selengkapnya >></a></p>
+                                <div class="button">
+                                    <a href="#" class="btn">DAFTAR</a>
+                                    <a href="#" class="btn primary">LOGIN</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Single Slider -->
+        </div>
+    </section>
+    <!--/ End Slider Area -->
+
+    <!-- Start Schedule Area -->
+    <section class="schedule">
+        <div class="container">
+            <div class="schedule-inner">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <!-- single-schedule -->
+                        <div class="single-schedule first">
+                            <div class="inner">
+                                <div class="icon">
+                                    <i class="fa fa-ambulance"></i>
+                                </div>
+                                <div class="single-content">
+                                    <span>PP</span>
+                                    <h4>Pemuda Pelopor</h4>
+                                    <p>
+                                        Pemuda pelopor adalah pemuda yang mempelopori suatu
+                                        kebijakan tertentu yang keren
+                                    </p>
+                                    <a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <!-- single-schedule -->
+                        <div class="single-schedule middle">
+                            <div class="inner">
+                                <div class="icon">
+                                    <i class="icofont-prescription"></i>
+                                </div>
+                                <div class="single-content">
+                                    <span>PP</span>
+                                    <h4>Pemuda Pelopor</h4>
+                                    <p>
+                                        Lorem ipsum sit amet consectetur adipiscing elit. Vivamus
+                                        et erat in lacus convallis sodales.
+                                    </p>
+                                    <a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-12">
+                        <!-- single-schedule -->
+                        <div class="single-schedule last">
+                            <div class="inner">
+                                <div class="icon">
+                                    <i class="icofont-ui-clock"></i>
+                                </div>
+                                <div class="single-content">
+                                    <span>Donec luctus</span>
+                                    <h4>Opening Hours</h4>
+                                    <ul class="time-sidual">
+                                        <li class="day">
+                                            Monday - Fridayp <span>8.00-20.00</span>
+                                        </li>
+                                        <li class="day">Saturday <span>9.00-18.30</span></li>
+                                        <li class="day">
+                                            Monday - Thusday <span>9.00-15.00</span>
+                                        </li>
+                                    </ul>
+                                    <a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/End Start schedule Area -->
+
+    <!-- Start Feautes -->
+    <section class="Feautes section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>We Are Always Ready to Help You & Your Family</h2>
+                        <img src="img/section-img.png" alt="#" />
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit praesent
+                            aliquet. pretiumts
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-12">
+                    <!-- Start Single features -->
+                    <div class="single-features">
+                        <div class="signle-icon">
+                            <i class="icofont icofont-ambulance-cross"></i>
+                        </div>
+                        <h3>Emergency Help</h3>
+                        <p>
+                            Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam
+                            vulputate.
+                        </p>
+                    </div>
+                    <!-- End Single features -->
+                </div>
+                <div class="col-lg-4 col-12">
+                    <!-- Start Single features -->
+                    <div class="single-features">
+                        <div class="signle-icon">
+                            <i class="icofont icofont-medical-sign-alt"></i>
+                        </div>
+                        <h3>Enriched Pharmecy</h3>
+                        <p>
+                            Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam
+                            vulputate.
+                        </p>
+                    </div>
+                    <!-- End Single features -->
+                </div>
+                <div class="col-lg-4 col-12">
+                    <!-- Start Single features -->
+                    <div class="single-features last">
+                        <div class="signle-icon">
+                            <i class="icofont icofont-stethoscope"></i>
+                        </div>
+                        <h3>Medical Treatment</h3>
+                        <p>
+                            Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam
+                            vulputate.
+                        </p>
+                    </div>
+                    <!-- End Single features -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ End Feautes -->
+
+    <!-- Start Fun-facts -->
+    <div id="fun-facts" class="fun-facts section overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <!-- Start Single Fun -->
+                    <div class="single-fun">
+                        <i class="icofont icofont-home"></i>
+                        <div class="content">
+                            <span class="counter">3468</span>
+                            <p>Hospital Rooms</p>
+                        </div>
+                    </div>
+                    <!-- End Single Fun -->
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <!-- Start Single Fun -->
+                    <div class="single-fun">
+                        <i class="icofont icofont-user-alt-3"></i>
+                        <div class="content">
+                            <span class="counter">557</span>
+                            <p>Specialist Doctors</p>
+                        </div>
+                    </div>
+                    <!-- End Single Fun -->
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <!-- Start Single Fun -->
+                    <div class="single-fun">
+                        <i class="icofont-simple-smile"></i>
+                        <div class="content">
+                            <span class="counter">4379</span>
+                            <p>Happy Patients</p>
+                        </div>
+                    </div>
+                    <!-- End Single Fun -->
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <!-- Start Single Fun -->
+                    <div class="single-fun">
+                        <i class="icofont icofont-table"></i>
+                        <div class="content">
+                            <span class="counter">32</span>
+                            <p>Years of Experience</p>
+                        </div>
+                    </div>
+                    <!-- End Single Fun -->
+                </div>
+>>>>>>> bb363a82ebf0c749c9e7b7874839725733ff59d5
             </div>
             <div class="col-lg-7 col-md-9 col-12">
               <!-- Main Menu -->
@@ -1083,6 +1404,7 @@
   </section>
   <!-- /End Newsletter Area -->
 
+<<<<<<< HEAD
   <!-- Footer Area -->
   <footer id="footer" class="footer">
     <!-- Footer Top -->
@@ -1115,6 +1437,131 @@
                 </li>
               </ul>
               <!-- End Social -->
+=======
+    <!-- Footer Area -->
+    <footer id="footer" class="footer">
+        <!-- Footer Top -->
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="single-footer">
+                            <h2>About Us</h2>
+                            <p>
+                                Lorem ipsum dolor sit am consectetur adipisicing elit do
+                                eiusmod tempor incididunt ut labore dolore magna.
+                            </p>
+                            <!-- Social -->
+                            <ul class="social">
+                                <li>
+                                    <a href="#"><i class="icofont-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icofont-google-plus"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icofont-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icofont-vimeo"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icofont-pinterest"></i></a>
+                                </li>
+                            </ul>
+                            <!-- End Social -->
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="single-footer f-link">
+                            <h2>Quick Links</h2>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><i class="fa fa-caret-right"
+                                                    aria-hidden="true"></i>Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-caret-right"
+                                                    aria-hidden="true"></i>About Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-caret-right"
+                                                    aria-hidden="true"></i>Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Our
+                                                Cases</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-caret-right"
+                                                    aria-hidden="true"></i>Other
+                                                Links</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><i class="fa fa-caret-right"
+                                                    aria-hidden="true"></i>Consuling</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-caret-right"
+                                                    aria-hidden="true"></i>Finance</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-caret-right"
+                                                    aria-hidden="true"></i>Testimonials</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-caret-right"
+                                                    aria-hidden="true"></i>FAQ</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-caret-right"
+                                                    aria-hidden="true"></i>Contact
+                                                Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="single-footer">
+                            <h2>Open Hours</h2>
+                            <p>
+                                Lorem ipsum dolor sit ame consectetur adipisicing elit do
+                                eiusmod tempor incididunt.
+                            </p>
+                            <ul class="time-sidual">
+                                <li class="day">Monday - Fridayp <span>8.00-20.00</span></li>
+                                <li class="day">Saturday <span>9.00-18.30</span></li>
+                                <li class="day">Monday - Thusday <span>9.00-15.00</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="single-footer">
+                            <h2>Newsletter</h2>
+                            <p>
+                                subscribe to our newsletter to get allour news in your inbox..
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            </p>
+                            <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+                                <input name="email" placeholder="Email Address" class="common-input"
+                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'"
+                                    required="" type="email" />
+                                <button class="button">
+                                    <i class="icofont icofont-paper-plane"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+>>>>>>> bb363a82ebf0c749c9e7b7874839725733ff59d5
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-12">
