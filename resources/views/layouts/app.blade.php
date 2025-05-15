@@ -51,25 +51,13 @@
 
 <body>
     <!-- Preloader -->
-    <div class="preloader">
-        <div class="loader">
-            <div class="loader-outter"></div>
-            <div class="loader-inner"></div>
-
-            <div class="indicator">
-                <svg width="16px" height="12px">
-                    <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
-                    <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
-                </svg>
-            </div>
-        </div>
-    </div>
     <!-- End Preloader -->
 
-    <!-- Get Pro Button -->
-    <ul class="pro-features">
-        <a class="get-pro" href="#">Get Pro</a>
-        <li class="big-title">Pro Version Available on Themeforest</li>
+    <!-- Cp whatsapp -->
+    <div class="pro-features">
+        <a class="get-pro" href="https://wa.me/6282328059577?text=Mas%20mau%20nanya%20dong!!"><img src="img/wa-icon.png"
+                alt="wa-icon" width="60%"></a>
+        {{-- <li class="big-title">Pro Version Available on Themeforest</li>
         <li class="title">Pro Version Features</li>
         <li>2+ premade home pages</li>
         <li>20+ html pages</li>
@@ -81,8 +69,8 @@
                 target="_blank" class="btn">Pro Version Demo</a>
             <a href="https://themeforest.net/item/mediplus-medical-and-doctor-html-template/26665910" target="_blank"
                 class="btn">Buy Pro Version</a>
-        </div>
-    </ul>
+        </div> --}}
+    </div>
 
     <!-- Header Area -->
     <header class="header">
@@ -94,8 +82,8 @@
                         <div class="col-lg-3 col-md-3 col-12">
                             <!-- Start Logo -->
                             <div class="logo">
-                                <a href="{{ route('home') }}"><img src="{{ asset('img/logo.png') }}" width="65%"
-                                        alt="#" /></a>
+                                <a href="{{ route('home') }}"><img src="{{ asset('img/logo.png') }}" alt="#"
+                                        width="60%" /></a>
                             </div>
                             <!-- End Logo -->
                             <!-- Mobile Nav -->

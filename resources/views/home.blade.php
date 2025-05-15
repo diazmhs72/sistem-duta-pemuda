@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@extends('layouts.preload')
 @section('title', 'Home page')
 @section('content')
 
@@ -174,7 +175,7 @@
     </section>
     <!--/ End countdown -->
 
-    <!-- Start Fun-facts -->
+    <!-- Start selection flow -->
     <div id="fun-facts" class="fun-facts section overlay">
         <div class="container">
             <div class="row">
@@ -225,7 +226,7 @@
             </div>
         </div>
     </div>
-    <!--/ End Fun-facts -->
+    <!--/ End selection flow -->
 
     <!-- Start Blog Area -->
     <section class="blog section" id="blog">
