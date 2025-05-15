@@ -43,10 +43,6 @@
       <link rel="stylesheet" href="{{ asset('css/responsive.css') }}" />
 
       <style>
-          html {
-              height: 100% !important;
-          }
-
           body {
               font-family: 'Poppins', sans-serif;
               color: #000;
@@ -266,7 +262,7 @@
                           <h2 class="text-center">Pilih Kategori</h2>
                           <h6 class="text-muted text-center mb-5">Pilih program yang kamu inginkan.</h6>
                           {{-- kolom kategori --}}
-                          <div class="mx-sm-5">
+                          <div class="mx-5">
                               <div class="program-item mb-5 d-flex flex-row align-items-center"
                                   onclick="window.location.href='pendaftaran'">
                                   <img src="img/logo_pp.png" alt="" width="72px">
