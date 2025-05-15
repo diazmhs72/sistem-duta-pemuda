@@ -3,6 +3,7 @@
 @section('title', 'Home page')
 @section('content')
 
+<<<<<<< HEAD
     {{-- preload --}}
     <div class="preloader">
         <div class="loader">
@@ -17,6 +18,67 @@
             </div>
         </div>
     </div>
+=======
+    <style>
+        @font-face {
+            font-family: 'Digital7';
+            src: url('fonts/digital-7.ttf') format('truetype');
+        }
+
+        body {
+            background: #f0f4f8;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .countdown-card {
+            background: linear-gradient(135deg, #3a8dff, #6ca7ff);
+            border-radius: .75rem;
+            padding: 2rem 3rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .countdown-unit .value {
+            font-family: 'Digital7', monospace;
+            font-size: 5rem;
+            display: block;
+            text-align: center;
+            line-height: 1;
+            letter-spacing: .1rem;
+        }
+
+        .countdown-unit .label {
+            font-size: 1rem;
+            display: block;
+            text-align: center;
+            margin-top: .5rem;
+            letter-spacing: .05rem;
+            text-transform: uppercase;
+        }
+
+        .separator {
+            font-size: 5rem;
+            line-height: 1;
+            position: relative;
+            top: -10px;
+            color: #fff;
+            margin: 0 .75rem;
+        }
+
+        .section-title {
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .timer-title {
+            color: #333;
+            font-size: 1.25rem;
+            margin-bottom: .75rem;
+            text-align: center;
+            font-weight: 600;
+        }
+    </style>
+>>>>>>> 1c78c39ca1709c851b44a2d7c2a4fa6de65acb9f
 
     <!-- Slider Area -->
     <section class="slider">
@@ -127,13 +189,77 @@
     <section class="features section py-5">
         <div class="container">
             <div class="row">
+<<<<<<< HEAD
                 <div class="col-12 text-center">
                     <div class="section-title mb-2">
                         <h2 class="font-weight-bold display-4">Sisa Waktu Pendaftaran</h2>
                         <img src="img/section-img.png" alt="#" class="img-fluid" />
+=======
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Sisa Waktu Pendaftaran</h2>
+                        {{-- <img src="img/section-img.png" alt="#" /> --}}
+                        {{-- <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit praesent
+                            aliquet. pretiumts
+                        </p> --}}
+                        <!-- Countdown 1 -->
+                        <div class="timer-title">Pemuda Pelopor</div>
+                        <div class="d-flex justify-content-center">
+                            <div class="countdown-card d-flex align-items-center">
+                                <div class="countdown-unit text-white">
+                                    <span id="days1" class="value">0</span>
+                                    <span class="label">Hari</span>
+                                </div>
+                                <div class="separator">:</div>
+                                <div class="countdown-unit text-white">
+                                    <span id="hours1" class="value">00</span>
+                                    <span class="label">Jam</span>
+                                </div>
+                                <div class="separator">:</div>
+                                <div class="countdown-unit text-white">
+                                    <span id="minutes1" class="value">00</span>
+                                    <span class="label">Menit</span>
+                                </div>
+                                <div class="separator">:</div>
+                                <div class="countdown-unit text-white">
+                                    <span id="seconds1" class="value">00</span>
+                                    <span class="label">Detik</span>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Countdown 2 -->
+                        <div class="timer-title">PPAP dan PPAN</div>
+                        <div class="d-flex justify-content-center">
+                            <div class="countdown-card d-flex align-items-center">
+                                <div class="countdown-unit text-white">
+                                    <span id="days2" class="value">0</span>
+                                    <span class="label">Hari</span>
+                                </div>
+                                <div class="separator">:</div>
+                                <div class="countdown-unit text-white">
+                                    <span id="hours2" class="value">00</span>
+                                    <span class="label">Jam</span>
+                                </div>
+                                <div class="separator">:</div>
+                                <div class="countdown-unit text-white">
+                                    <span id="minutes2" class="value">00</span>
+                                    <span class="label">Menit</span>
+                                </div>
+                                <div class="separator">:</div>
+                                <div class="countdown-unit text-white">
+                                    <span id="seconds2" class="value">00</span>
+                                    <span class="label">Detik</span>
+                                </div>
+                            </div>
+                        </div>
+>>>>>>> 1c78c39ca1709c851b44a2d7c2a4fa6de65acb9f
                     </div>
+                    <!-- End Single Fun -->
                 </div>
             </div>
+<<<<<<< HEAD
 
             <div class="row justify-content-center">
                 <div class="col-lg-10 col-md-12">
@@ -161,6 +287,10 @@
                     </div>
                 </div>
             </div>
+=======
+        </div>
+        </div>
+>>>>>>> 1c78c39ca1709c851b44a2d7c2a4fa6de65acb9f
         </div>
     </section>
 
