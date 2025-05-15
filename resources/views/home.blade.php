@@ -6,7 +6,7 @@
     <section class="slider">
         <div class="hero-slider">
             <!-- Start Single Slider -->
-            <div class="single-slider" style="background-image: url('img/slider2.jpg')">
+            <div class="single-slider" style="background-image: url('img/slider.png')">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-7">
@@ -26,7 +26,7 @@
             </div>
             <!-- End Single Slider -->
             <!-- Start Single Slider -->
-            <div class="single-slider" style="background-image: url('img/slider.jpg')">
+            <div class="single-slider" style="background-image: url('img/slider2.png')">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-7">
@@ -46,7 +46,7 @@
             </div>
             <!-- Start End Slider -->
             <!-- Start Single Slider -->
-            <div class="single-slider" style="background-image: url('img/slider3.jpg')">
+            <div class="single-slider" style="background-image: url('img/slider3.png')">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-7">
@@ -105,68 +105,74 @@
     </section>
     <!--/End Start schedule Area -->
 
-    <!-- Start Feautes -->
+    <!-- Start countdown -->
     <section class="Feautes section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h2>We Are Always Ready to Help You & Your Family</h2>
-                        <img src="img/section-img.png" alt="#" />
-                        <p>
+                        <h2>Sisa Waktu Pendaftaran</h2>
+                        {{-- <img src="img/section-img.png" alt="#" /> --}}
+                        {{-- <p>
                             Lorem ipsum dolor sit amet consectetur adipiscing elit praesent
                             aliquet. pretiumts
-                        </p>
+                        </p> --}}
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-12">
-                    <!-- Start Single features -->
-                    <div class="single-features">
-                        <div class="signle-icon">
-                            <i class="icofont icofont-ambulance-cross"></i>
+            <div id="" class="section" style="border-radius: 30px; backgrund-color: blue">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <!-- Start Single Fun -->
+                            <div class="single-fun">
+                                <i class="icofont icofont-home"></i>
+                                <div class="content">
+                                    <span class="counter">3468</span>
+                                    <p>Hospital Rooms</p>
+                                </div>
+                            </div>
+                            <!-- End Single Fun -->
                         </div>
-                        <h3>Emergency Help</h3>
-                        <p>
-                            Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam
-                            vulputate.
-                        </p>
-                    </div>
-                    <!-- End Single features -->
-                </div>
-                <div class="col-lg-4 col-12">
-                    <!-- Start Single features -->
-                    <div class="single-features">
-                        <div class="signle-icon">
-                            <i class="icofont icofont-medical-sign-alt"></i>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <!-- Start Single Fun -->
+                            <div class="single-fun">
+                                <i class="icofont icofont-user-alt-3"></i>
+                                <div class="content">
+                                    <span class="counter">557</span>
+                                    <p>Specialist Doctors</p>
+                                </div>
+                            </div>
+                            <!-- End Single Fun -->
                         </div>
-                        <h3>Enriched Pharmecy</h3>
-                        <p>
-                            Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam
-                            vulputate.
-                        </p>
-                    </div>
-                    <!-- End Single features -->
-                </div>
-                <div class="col-lg-4 col-12">
-                    <!-- Start Single features -->
-                    <div class="single-features last">
-                        <div class="signle-icon">
-                            <i class="icofont icofont-stethoscope"></i>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <!-- Start Single Fun -->
+                            <div class="single-fun">
+                                <i class="icofont-simple-smile"></i>
+                                <div class="content">
+                                    <span class="counter">4379</span>
+                                    <p>Happy Patients</p>
+                                </div>
+                            </div>
+                            <!-- End Single Fun -->
                         </div>
-                        <h3>Medical Treatment</h3>
-                        <p>
-                            Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam
-                            vulputate.
-                        </p>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <!-- Start Single Fun -->
+                            <div class="single-fun">
+                                <i class="icofont icofont-table"></i>
+                                <div class="content">
+                                    <span class="counter">32</span>
+                                    <p>Years of Experience</p>
+                                </div>
+                            </div>
+                            <!-- End Single Fun -->
+                        </div>
                     </div>
-                    <!-- End Single features -->
                 </div>
             </div>
         </div>
     </section>
-    <!--/ End Feautes -->
+    <!--/ End countdown -->
 
     <!-- Start Fun-facts -->
     <div id="fun-facts" class="fun-facts section overlay">

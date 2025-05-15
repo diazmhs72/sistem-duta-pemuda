@@ -14,7 +14,7 @@
     <title>@yield('title', 'Mediplus - Free Medical and Doctor Directory HTML Template')</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="img/favicon1.png" />
+    <link rel="icon" href="img/favicon.png" />
 
     <!-- Google Fonts -->
     <link
@@ -93,7 +93,7 @@
                         <div class="col-lg-3 col-md-3 col-12">
                             <!-- Start Logo -->
                             <div class="logo">
-                                <a href="{{ route('home') }}"><img src="{{ asset('img/logo1.png') }}" width="65%"
+                                <a href="{{ route('home') }}"><img src="{{ asset('img/logo.png') }}" width="65%"
                                         alt="#" /></a>
                             </div>
                             <!-- End Logo -->
