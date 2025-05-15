@@ -1,60 +1,22 @@
 @extends('layouts.app')
-@extends('layouts.preload')
+{{-- @extends('layouts.preload') --}}
 @section('title', 'Home page')
 @section('content')
 
-    @font-face {
-    font-family: 'Digital7';
-    src: url('fonts/digital-7.ttf') format('truetype');
-    }
+    {{-- preload --}}
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-outter"></div>
+            <div class="loader-inner"></div>
 
-    <style>
-        body {
-            background: #f0f4f8;
-            font-family: 'Orbitron', sans-serif;
-        }
-
-        .countdown-card {
-            background: linear-gradient(135deg, #3a8dff, #6ca7ff);
-            border-radius: .75rem;
-            padding: 2.5rem 4rem;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-        }
-
-        .countdown-unit {
-            text-align: center;
-            color: #fff;
-        }
-
-        .countdown-unit .value {
-            font-size: 5rem;
-            font-family: 'Digital7', monospace;
-            letter-spacing: .1rem;
-            display: block;
-            text-align: center;
-            line-height: 1;
-        }
-
-        .countdown-unit .label {
-            font-size: 1rem;
-            margin-top: 0.5rem;
-            text-transform: uppercase;
-            letter-spacing: .05rem;
-            display: block;
-            text-align: center;
-            line-height: 1.2;
-        }
-
-        .separator {
-            font-size: 5rem;
-            /* Sesuaikan dengan .value */
-            line-height: 1;
-            position: relative;
-            top: -10px;
-            /* Naikkan separator ke atas */
-            color: #fff
-        }
-    </style>
+            <div class="indicator">
+                <svg width="16px" height="12px">
+                    <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                    <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                </svg>
+            </div>
+        </div>
+    </div>
 
     <!-- Slider Area -->
     <section class="slider">
@@ -66,8 +28,10 @@
                         <div class="col-lg-7">
                             <div class="text">
                                 <h1>
-                                    SELEKSI PPAN & PPAP TINGKAT KOTA TANGERANG SELATAN TAHUN
-                                    2025
+                                    SELEKSI PP, PPAN & PPAP
+                                </h1>
+                                <h1> TANGERANG SELATAN</h1>
+                                <h1>TAHUN 2025
                                 </h1>
                                 <p><a href="#">Info Selengkapnya >></a></p>
                                 <div class="button">
@@ -160,95 +124,46 @@
     <!--/End Start schedule Area -->
 
     <!-- Start countdown -->
-    <section class="Feautes section" style="background-color: #ffffff">
+    <section class="features section py-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <h2>Sisa Waktu Pendaftaran</h2>
-                        {{-- <img src="img/section-img.png" alt="#" /> --}}
-                        {{-- <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit praesent
-                            aliquet. pretiumts
-                        </p> --}}
-                        <div class="d-flex justify-content-center align-items-center vh-100">
-                            <div class="countdown-card d-flex align-items-center">
-                                <div class="countdown-unit">
-                                    <div id="days" class="value">0</div>
-                                    <div class="label">Hari</div>
-                                </div>
-                                <div class="separator mx-3">:</div>
-                                <div class="countdown-unit">
-                                    <div id="hours" class="value">00</div>
-                                    <div class="label">Jam</div>
-                                </div>
-                                <div class="separator mx-3">:</div>
-                                <div class="countdown-unit">
-                                    <div id="minutes" class="value">00</div>
-                                    <div class="label">Menit</div>
-                                </div>
-                                <div class="separator mx-3">:</div>
-                                <div class="countdown-unit">
-                                    <div id="seconds" class="value">00</div>
-                                    <div class="label">Detik</div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-12 text-center">
+                    <div class="section-title mb-2">
+                        <h2 class="font-weight-bold display-4">Sisa Waktu Pendaftaran</h2>
+                        <img src="img/section-img.png" alt="#" class="img-fluid" />
                     </div>
                 </div>
             </div>
-            <div id="" class="section" style="border-radius: 30px; backgrund-color: blue">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <!-- Start Single Fun -->
-                            <div class="single-fun">
-                                <i class="icofont icofont-home"></i>
-                                <div class="content">
-                                    <span class="counter">3468</span>
-                                    <p>Hospital Rooms</p>
-                                </div>
-                            </div>
-                            <!-- End Single Fun -->
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-md-12">
+                    <div class="card p-5 p-md-5 d-flex flex-column flex-md-row justify-content-center align-items-center text-center text-md-left shadow"
+                        style="background-color: #1a76d1; margin-top:15px">
+                        <div class="d-flex flex-column text-center px-3 mb-4 mb-md-0">
+                            <div id="days" class="font-weight-bold display-4 display-md-3">0</div>
+                            <div class="text-muted h5">Hari</div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <!-- Start Single Fun -->
-                            <div class="single-fun">
-                                <i class="icofont icofont-user-alt-3"></i>
-                                <div class="content">
-                                    <span class="counter">557</span>
-                                    <p>Specialist Doctors</p>
-                                </div>
-                            </div>
-                            <!-- End Single Fun -->
+                        <div class="display-4 mx-2">:</div>
+                        <div class="d-flex flex-column text-center px-3 mb-4 mb-md-0">
+                            <div id="hours" class="font-weight-bold display-4 display-md-3">00</div>
+                            <div class="text-muted h5">Jam</div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <!-- Start Single Fun -->
-                            <div class="single-fun">
-                                <i class="icofont-simple-smile"></i>
-                                <div class="content">
-                                    <span class="counter">4379</span>
-                                    <p>Happy Patients</p>
-                                </div>
-                            </div>
-                            <!-- End Single Fun -->
+                        <div class="display-4 mx-2">:</div>
+                        <div class="d-flex flex-column text-center px-3 mb-4 mb-md-0">
+                            <div id="minutes" class="font-weight-bold display-4 display-md-3">00</div>
+                            <div class="text-muted h5">Menit</div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <!-- Start Single Fun -->
-                            <div class="single-fun">
-                                <i class="icofont icofont-table"></i>
-                                <div class="content">
-                                    <span class="counter">32</span>
-                                    <p>Years of Experience</p>
-                                </div>
-                            </div>
-                            <!-- End Single Fun -->
+                        <div class="display-4 mx-2">:</div>
+                        <div class="d-flex flex-column text-center px-3">
+                            <div id="seconds" class="font-weight-bold display-4 display-md-3">00</div>
+                            <div class="text-muted h5">Detik</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <!--/ End countdown -->
 
     <!-- Start selection flow -->
