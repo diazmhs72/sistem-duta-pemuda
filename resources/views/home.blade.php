@@ -3,6 +3,59 @@
 @section('title', 'Home page')
 @section('content')
 
+    @font-face {
+    font-family: 'Digital7';
+    src: url('fonts/digital-7.ttf') format('truetype');
+    }
+
+    <style>
+        body {
+            background: #f0f4f8;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .countdown-card {
+            background: linear-gradient(135deg, #3a8dff, #6ca7ff);
+            border-radius: .75rem;
+            padding: 2.5rem 4rem;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .countdown-unit {
+            text-align: center;
+            color: #fff;
+        }
+
+        .countdown-unit .value {
+            font-size: 5rem;
+            font-family: 'Digital7', monospace;
+            letter-spacing: .1rem;
+            display: block;
+            text-align: center;
+            line-height: 1;
+        }
+
+        .countdown-unit .label {
+            font-size: 1rem;
+            margin-top: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: .05rem;
+            display: block;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        .separator {
+            font-size: 5rem;
+            /* Sesuaikan dengan .value */
+            line-height: 1;
+            position: relative;
+            top: -10px;
+            /* Naikkan separator ke atas */
+            color: #fff
+        }
+    </style>
+
     <!-- Slider Area -->
     <section class="slider">
         <div class="hero-slider">
@@ -107,7 +160,7 @@
     <!--/End Start schedule Area -->
 
     <!-- Start countdown -->
-    <section class="Feautes section">
+    <section class="Feautes section" style="background-color: #ffffff">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -118,6 +171,29 @@
                             Lorem ipsum dolor sit amet consectetur adipiscing elit praesent
                             aliquet. pretiumts
                         </p> --}}
+                        <div class="d-flex justify-content-center align-items-center vh-100">
+                            <div class="countdown-card d-flex align-items-center">
+                                <div class="countdown-unit">
+                                    <div id="days" class="value">0</div>
+                                    <div class="label">Hari</div>
+                                </div>
+                                <div class="separator mx-3">:</div>
+                                <div class="countdown-unit">
+                                    <div id="hours" class="value">00</div>
+                                    <div class="label">Jam</div>
+                                </div>
+                                <div class="separator mx-3">:</div>
+                                <div class="countdown-unit">
+                                    <div id="minutes" class="value">00</div>
+                                    <div class="label">Menit</div>
+                                </div>
+                                <div class="separator mx-3">:</div>
+                                <div class="countdown-unit">
+                                    <div id="seconds" class="value">00</div>
+                                    <div class="label">Detik</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
