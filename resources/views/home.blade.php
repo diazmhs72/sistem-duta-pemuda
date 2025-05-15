@@ -3,12 +3,12 @@
 @section('title', 'Home page')
 @section('content')
 
-    @font-face {
-    font-family: 'Digital7';
-    src: url('fonts/digital-7.ttf') format('truetype');
-    }
-
     <style>
+        @font-face {
+            font-family: 'Digital7';
+            src: url('fonts/digital-7.ttf') format('truetype');
+        }
+
         body {
             background: #f0f4f8;
             font-family: 'Orbitron', sans-serif;
@@ -17,42 +17,49 @@
         .countdown-card {
             background: linear-gradient(135deg, #3a8dff, #6ca7ff);
             border-radius: .75rem;
-            padding: 2.5rem 4rem;
+            padding: 2rem 3rem;
+            margin-bottom: 2rem;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
 
-        .countdown-unit {
-            text-align: center;
-            color: #fff;
-        }
-
         .countdown-unit .value {
-            font-size: 5rem;
             font-family: 'Digital7', monospace;
-            letter-spacing: .1rem;
+            font-size: 5rem;
             display: block;
             text-align: center;
             line-height: 1;
+            letter-spacing: .1rem;
         }
 
         .countdown-unit .label {
             font-size: 1rem;
-            margin-top: 0.5rem;
-            text-transform: uppercase;
-            letter-spacing: .05rem;
             display: block;
             text-align: center;
-            line-height: 1.2;
+            margin-top: .5rem;
+            letter-spacing: .05rem;
+            text-transform: uppercase;
         }
 
         .separator {
             font-size: 5rem;
-            /* Sesuaikan dengan .value */
             line-height: 1;
             position: relative;
             top: -10px;
-            /* Naikkan separator ke atas */
-            color: #fff
+            color: #fff;
+            margin: 0 .75rem;
+        }
+
+        .section-title {
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .timer-title {
+            color: #333;
+            font-size: 1.25rem;
+            margin-bottom: .75rem;
+            text-align: center;
+            font-weight: 600;
         }
     </style>
 
@@ -171,82 +178,63 @@
                             Lorem ipsum dolor sit amet consectetur adipiscing elit praesent
                             aliquet. pretiumts
                         </p> --}}
-                        <div class="d-flex justify-content-center align-items-center vh-100">
+                        <!-- Countdown 1 -->
+                        <div class="timer-title">Pemuda Pelopor</div>
+                        <div class="d-flex justify-content-center">
                             <div class="countdown-card d-flex align-items-center">
-                                <div class="countdown-unit">
-                                    <div id="days" class="value">0</div>
-                                    <div class="label">Hari</div>
+                                <div class="countdown-unit text-white">
+                                    <span id="days1" class="value">0</span>
+                                    <span class="label">Hari</span>
                                 </div>
-                                <div class="separator mx-3">:</div>
-                                <div class="countdown-unit">
-                                    <div id="hours" class="value">00</div>
-                                    <div class="label">Jam</div>
+                                <div class="separator">:</div>
+                                <div class="countdown-unit text-white">
+                                    <span id="hours1" class="value">00</span>
+                                    <span class="label">Jam</span>
                                 </div>
-                                <div class="separator mx-3">:</div>
-                                <div class="countdown-unit">
-                                    <div id="minutes" class="value">00</div>
-                                    <div class="label">Menit</div>
+                                <div class="separator">:</div>
+                                <div class="countdown-unit text-white">
+                                    <span id="minutes1" class="value">00</span>
+                                    <span class="label">Menit</span>
                                 </div>
-                                <div class="separator mx-3">:</div>
-                                <div class="countdown-unit">
-                                    <div id="seconds" class="value">00</div>
-                                    <div class="label">Detik</div>
+                                <div class="separator">:</div>
+                                <div class="countdown-unit text-white">
+                                    <span id="seconds1" class="value">00</span>
+                                    <span class="label">Detik</span>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Countdown 2 -->
+                        <div class="timer-title">PPAP dan PPAN</div>
+                        <div class="d-flex justify-content-center">
+                            <div class="countdown-card d-flex align-items-center">
+                                <div class="countdown-unit text-white">
+                                    <span id="days2" class="value">0</span>
+                                    <span class="label">Hari</span>
+                                </div>
+                                <div class="separator">:</div>
+                                <div class="countdown-unit text-white">
+                                    <span id="hours2" class="value">00</span>
+                                    <span class="label">Jam</span>
+                                </div>
+                                <div class="separator">:</div>
+                                <div class="countdown-unit text-white">
+                                    <span id="minutes2" class="value">00</span>
+                                    <span class="label">Menit</span>
+                                </div>
+                                <div class="separator">:</div>
+                                <div class="countdown-unit text-white">
+                                    <span id="seconds2" class="value">00</span>
+                                    <span class="label">Detik</span>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- End Single Fun -->
                 </div>
             </div>
-            <div id="" class="section" style="border-radius: 30px; backgrund-color: blue">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <!-- Start Single Fun -->
-                            <div class="single-fun">
-                                <i class="icofont icofont-home"></i>
-                                <div class="content">
-                                    <span class="counter">3468</span>
-                                    <p>Hospital Rooms</p>
-                                </div>
-                            </div>
-                            <!-- End Single Fun -->
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <!-- Start Single Fun -->
-                            <div class="single-fun">
-                                <i class="icofont icofont-user-alt-3"></i>
-                                <div class="content">
-                                    <span class="counter">557</span>
-                                    <p>Specialist Doctors</p>
-                                </div>
-                            </div>
-                            <!-- End Single Fun -->
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <!-- Start Single Fun -->
-                            <div class="single-fun">
-                                <i class="icofont-simple-smile"></i>
-                                <div class="content">
-                                    <span class="counter">4379</span>
-                                    <p>Happy Patients</p>
-                                </div>
-                            </div>
-                            <!-- End Single Fun -->
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <!-- Start Single Fun -->
-                            <div class="single-fun">
-                                <i class="icofont icofont-table"></i>
-                                <div class="content">
-                                    <span class="counter">32</span>
-                                    <p>Years of Experience</p>
-                                </div>
-                            </div>
-                            <!-- End Single Fun -->
-                        </div>
-                    </div>
-                </div>
-            </div>
+        </div>
+        </div>
         </div>
     </section>
     <!--/ End countdown -->
