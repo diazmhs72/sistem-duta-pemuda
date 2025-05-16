@@ -52,7 +52,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 14px;
-    color: #888;
+    color: #ffffff;
 }
 .pro-features {
     position: fixed;
@@ -116,7 +116,7 @@ body {
     border-radius: 20px 0 0 20px;
     background: #25d366;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 2px;
     color: #fff;
     top: 0;
     cursor: pointer;
