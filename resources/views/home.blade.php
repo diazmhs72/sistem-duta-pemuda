@@ -29,28 +29,6 @@
             letter-spacing: .05rem;
             text-transform: uppercase;
         }
-
-        .separator {
-            font-size: 5rem;
-            line-height: 1;
-            position: relative;
-            top: -10px;
-            color: #fff;
-            margin: 0 .75rem;
-        }
-
-        .section-title {
-            margin-top: 2rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .timer-title {
-            color: #333;
-            font-size: 1.25rem;
-            margin-bottom: .75rem;
-            text-align: center;
-            font-weight: 600;
-        }
     </style>
 
     <!-- Preloader -->
@@ -188,7 +166,7 @@
                         <div class="col-lg-10 col-md-12">
                             <h5>Pemuda Pelopor</h5>
                             <div class="card p-5 p-md-5 d-flex flex-column flex-md-row justify-content-center align-items-center text-center text-md-left shadow"
-                                style="background: linear-gradient(135deg, #1a76d1, #3a8dff);">
+                                style="background: linear-gradient(135deg, #1a76d1, #3a8dff); color: #fff">
                                 <div class="d-flex flex-column countdown-unit text-center px-3 mb-4 mb-md-0">
                                     <span id="days2" class="value">0</span>
                                     <span class="label">Hari</span>
@@ -216,7 +194,7 @@
                         <div class="col-lg-10 col-md-12">
                             <h5>PPAP dan PPAN</h5>
                             <div class="card p-5 p-md-5 d-flex flex-column flex-md-row justify-content-center align-items-center text-center text-md-left shadow"
-                                style=" background: linear-gradient(135deg, #1a76d1, #3a8dff);">
+                                style=" background: linear-gradient(135deg, #1a76d1, #3a8dff); color: #fff">
                                 <div class="d-flex flex-column countdown-unit text-center px-3 mb-4 mb-md-0">
                                     <span id="days2" class="value">0</span>
                                     <span class="label">Hari</span>

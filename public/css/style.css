@@ -52,7 +52,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 14px;
-    color: #ffffff;
+    color: #000;
 }
 .pro-features {
     position: fixed;
@@ -904,7 +904,7 @@ body {
     padding: 120px 0;
 }
 .fun-facts {
-    background: url("img/fun-bg.jpg");
+    background: url("/img/fun-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
