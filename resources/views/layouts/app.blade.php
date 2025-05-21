@@ -148,7 +148,7 @@
                 <div
                     style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; align-items: center; color: white;">
                     <div style="display: flex; align-items: center; gap: 10px;">
-                        <img src="img/logo-ig" alt="Instagram">
+                        <img src="img/logo-ig.png" alt="Instagram">
                         <span>Instagram: @dutapemuda.tangerangselatan</span>
                     </div>
                     <div style="display: flex; align-items: center; gap: 10px;">
