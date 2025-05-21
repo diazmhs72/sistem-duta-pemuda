@@ -203,7 +203,7 @@
                                 </div>
                             </div>
                         </div>
-                    
+
                         <!-- Countdown 2 -->
                         <div class="timer-title">PPAP dan PPAN</div>
                         <div class="d-flex justify-content-center">
@@ -246,10 +246,10 @@
                 <div class="col-lg-3 col-md-6 col-12">
                     <!-- Start Single Fun -->
                     <div class="single-fun">
-                        <i class="icofont icofont-home"></i>
+                        <i class="icofont icofont-ui-note"></i>
                         <div class="content">
-                            <span class="counter">3468</span>
-                            <p>Hospital Rooms</p>
+                            <span>Pendaftaran</span>
+                            <p>23 - 25 Desember 2025</p>
                         </div>
                     </div>
                     <!-- End Single Fun -->
@@ -257,10 +257,10 @@
                 <div class="col-lg-3 col-md-6 col-12">
                     <!-- Start Single Fun -->
                     <div class="single-fun">
-                        <i class="icofont icofont-user-alt-3"></i>
+                        <i class="icofont icofont-pencil"></i>
                         <div class="content">
-                            <span class="counter">557</span>
-                            <p>Specialist Doctors</p>
+                            <span> Isi Formulir</span>
+                            <p>10 - 15 Januari 2026</p>
                         </div>
                     </div>
                     <!-- End Single Fun -->
@@ -268,10 +268,10 @@
                 <div class="col-lg-3 col-md-6 col-12">
                     <!-- Start Single Fun -->
                     <div class="single-fun">
-                        <i class="icofont-simple-smile"></i>
+                        <i class="icofont-people"></i>
                         <div class="content">
-                            <span class="counter">4379</span>
-                            <p>Happy Patients</p>
+                            <span>Ujian Seleksi</span>
+                            <p>15 - 20 Januari 2026</p>
                         </div>
                     </div>
                     <!-- End Single Fun -->
@@ -279,10 +279,10 @@
                 <div class="col-lg-3 col-md-6 col-12">
                     <!-- Start Single Fun -->
                     <div class="single-fun">
-                        <i class="icofont icofont-table"></i>
+                        <i class="icofont icofont-bullhorn"></i>
                         <div class="content">
-                            <span class="counter">32</span>
-                            <p>Years of Experience</p>
+                            <span>Pengumuman</span>
+                            <p>10 Februari 2025</p>
                         </div>
                     </div>
                     <!-- End Single Fun -->
