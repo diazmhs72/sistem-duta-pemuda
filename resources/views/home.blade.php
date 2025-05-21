@@ -57,10 +57,10 @@
                         <div class="col-lg-7">
                             <div class="text">
                                 <h1>
-                                    SELEKSI PP, PPAN & PPAP
+                                    SELEKSI
                                 </h1>
-                                <h1> TANGERANG SELATAN</h1>
-                                <h1>TAHUN 2025
+                                <h1><span class="text-primary">DUTA PEMUDA</span></h1>
+                                <h1>KOTA TANGERANG SELATAN TAHUN 2025
                                 </h1>
                                 <p><a href="#">Info Selengkapnya >></a></p>
                                 <div class="button">
@@ -79,8 +79,10 @@
                         <div class="col-lg-7">
                             <div class="text">
                                 <h1>
-                                    SELEKSI PPAN & PPAP TINGKAT KOTA TANGERANG SELATAN TAHUN
-                                    2025
+                                    SELEKSI
+                                </h1>
+                                <h1><span class="text-primary">DUTA PEMUDA</span></h1>
+                                <h1>KOTA TANGERANG SELATAN TAHUN 2025
                                 </h1>
                                 <p><a href="#">Info Selengkapnya >></a></p>
                                 <div class="button">
@@ -99,8 +101,10 @@
                         <div class="col-lg-7">
                             <div class="text">
                                 <h1>
-                                    SELEKSI PPAN & PPAP TINGKAT KOTA TANGERANG SELATAN TAHUN
-                                    2025
+                                    SELEKSI
+                                </h1>
+                                <h1><span class="text-primary">DUTA PEMUDA</span></h1>
+                                <h1>KOTA TANGERANG SELATAN TAHUN 2025
                                 </h1>
                                 <p><a href="#">Info Selengkapnya >></a></p>
                                 <div class="button">
