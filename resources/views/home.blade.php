@@ -1,5 +1,4 @@
 @extends('layouts.app')
-@extends('layouts.preload')
 @section('title', 'Home page')
 @section('content')
 
@@ -9,17 +8,8 @@
             src: url('fonts/digital-7.ttf') format('truetype');
         }
 
-        body {
-            background: #f0f4f8;
-            font-family: 'Orbitron', sans-serif;
-        }
-
         .countdown-card {
             background: linear-gradient(135deg, #3a8dff, #6ca7ff);
-            border-radius: .75rem;
-            padding: 2rem 3rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
 
         .countdown-unit .value {
@@ -39,29 +29,23 @@
             letter-spacing: .05rem;
             text-transform: uppercase;
         }
-
-        .separator {
-            font-size: 5rem;
-            line-height: 1;
-            position: relative;
-            top: -10px;
-            color: #fff;
-            margin: 0 .75rem;
-        }
-
-        .section-title {
-            margin-top: 2rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .timer-title {
-            color: #333;
-            font-size: 1.25rem;
-            margin-bottom: .75rem;
-            text-align: center;
-            font-weight: 600;
-        }
     </style>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-outter"></div>
+            <div class="loader-inner"></div>
+
+            <div class="indicator">
+                <svg width="16px" height="12px">
+                    <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                    <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <!-- End Preloader -->
 
     <!-- Slider Area -->
     <section class="slider">
@@ -73,8 +57,10 @@
                         <div class="col-lg-7">
                             <div class="text">
                                 <h1>
-                                    SELEKSI PPAN & PPAP TINGKAT KOTA TANGERANG SELATAN TAHUN
-                                    2025
+                                    SELEKSI
+                                </h1>
+                                <h1><span class="text-primary">DUTA PEMUDA</span></h1>
+                                <h1>KOTA TANGERANG SELATAN TAHUN 2025
                                 </h1>
                                 <p><a href="#">Info Selengkapnya >></a></p>
                                 <div class="button">
@@ -93,8 +79,10 @@
                         <div class="col-lg-7">
                             <div class="text">
                                 <h1>
-                                    SELEKSI PPAN & PPAP TINGKAT KOTA TANGERANG SELATAN TAHUN
-                                    2025
+                                    SELEKSI
+                                </h1>
+                                <h1><span class="text-primary">DUTA PEMUDA</span></h1>
+                                <h1>KOTA TANGERANG SELATAN TAHUN 2025
                                 </h1>
                                 <p><a href="#">Info Selengkapnya >></a></p>
                                 <div class="button">
@@ -113,8 +101,10 @@
                         <div class="col-lg-7">
                             <div class="text">
                                 <h1>
-                                    SELEKSI PPAN & PPAP TINGKAT KOTA TANGERANG SELATAN TAHUN
-                                    2025
+                                    SELEKSI
+                                </h1>
+                                <h1><span class="text-primary">DUTA PEMUDA</span></h1>
+                                <h1>KOTA TANGERANG SELATAN TAHUN 2025
                                 </h1>
                                 <p><a href="#">Info Selengkapnya >></a></p>
                                 <div class="button">
@@ -167,76 +157,75 @@
     <!--/End Start schedule Area -->
 
     <!-- Start countdown -->
-    <section class="Feautes section" style="background-color: #ffffff">
+    <section class="features section py-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <h2>Sisa Waktu Pendaftaran</h2>
-                        {{-- <img src="img/section-img.png" alt="#" /> --}}
-                        {{-- <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit praesent
-                            aliquet. pretiumts
-                        </p> --}}
-                        <!-- Countdown 1 -->
-                        <div class="timer-title">Pemuda Pelopor</div>
-                        <div class="d-flex justify-content-center">
-                            <div class="countdown-card d-flex align-items-center">
-                                <div class="countdown-unit text-white">
-                                    <span id="days1" class="value">0</span>
-                                    <span class="label">Hari</span>
-                                </div>
-                                <div class="separator">:</div>
-                                <div class="countdown-unit text-white">
-                                    <span id="hours1" class="value">00</span>
-                                    <span class="label">Jam</span>
-                                </div>
-                                <div class="separator">:</div>
-                                <div class="countdown-unit text-white">
-                                    <span id="minutes1" class="value">00</span>
-                                    <span class="label">Menit</span>
-                                </div>
-                                <div class="separator">:</div>
-                                <div class="countdown-unit text-white">
-                                    <span id="seconds1" class="value">00</span>
-                                    <span class="label">Detik</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Countdown 2 -->
-                        <div class="timer-title">PPAP dan PPAN</div>
-                        <div class="d-flex justify-content-center">
-                            <div class="countdown-card d-flex align-items-center">
-                                <div class="countdown-unit text-white">
+                <div class="col-12 text-center">
+                    <div class="section-title mb-2">
+                        <h2 class="font-weight-bold display-4">Sisa Waktu Pendaftaran</h2>
+                        <img src="img/section-img.png" alt="#" class="img-fluid" />
+                    </div>
+                    {{-- countdown 1 --}}
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10 col-md-12">
+                            <h5>Pemuda Pelopor</h5>
+                            <div class="card p-5 p-md-5 d-flex flex-column flex-md-row justify-content-center align-items-center text-center text-md-left shadow"
+                                style="background: linear-gradient(135deg, #1a76d1, #3a8dff); color: #fff">
+                                <div class="d-flex flex-column countdown-unit text-center px-3 mb-4 mb-md-0">
                                     <span id="days2" class="value">0</span>
                                     <span class="label">Hari</span>
                                 </div>
-                                <div class="separator">:</div>
-                                <div class="countdown-unit text-white">
+                                <div class="display-4 mx-2">:</div>
+                                <div class="d-flex flex-column countdown-unit text-center px-3 mb-4 mb-md-0">
                                     <span id="hours2" class="value">00</span>
                                     <span class="label">Jam</span>
                                 </div>
-                                <div class="separator">:</div>
-                                <div class="countdown-unit text-white">
+                                <div class="display-4 mx-2">:</div>
+                                <div class="d-flex flex-column countdown-unit text-center px-3 mb-4 mb-md-0">
                                     <span id="minutes2" class="value">00</span>
                                     <span class="label">Menit</span>
                                 </div>
-                                <div class="separator">:</div>
-                                <div class="countdown-unit text-white">
+                                <div class="display-4 mx-2">:</div>
+                                <div class="d-flex flex-column countdown-unit text-center px-3">
                                     <span id="seconds2" class="value">00</span>
                                     <span class="label">Detik</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- End Single Fun -->
+                    {{-- countdown 2 --}}
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10 col-md-12">
+                            <h5>PPAP dan PPAN</h5>
+                            <div class="card p-5 p-md-5 d-flex flex-column flex-md-row justify-content-center align-items-center text-center text-md-left shadow"
+                                style=" background: linear-gradient(135deg, #1a76d1, #3a8dff); color: #fff">
+                                <div class="d-flex flex-column countdown-unit text-center px-3 mb-4 mb-md-0">
+                                    <span id="days2" class="value">0</span>
+                                    <span class="label">Hari</span>
+                                </div>
+                                <div class="display-4 mx-2">:</div>
+                                <div class="d-flex flex-column countdown-unit text-center px-3 mb-4 mb-md-0">
+                                    <span id="hours2" class="value">00</span>
+                                    <span class="label">Jam</span>
+                                </div>
+                                <div class="display-4 mx-2">:</div>
+                                <div class="d-flex flex-column countdown-unit text-center px-3 mb-4 mb-md-0">
+                                    <span id="minutes2" class="value">00</span>
+                                    <span class="label">Menit</span>
+                                </div>
+                                <div class="display-4 mx-2">:</div>
+                                <div class="d-flex flex-column countdown-unit text-center px-3">
+                                    <span id="seconds2" class="value">00</span>
+                                    <span class="label">Detik</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
-        </div>
     </section>
+
     <!--/ End countdown -->
 
     <!-- Start selection flow -->

@@ -17,18 +17,21 @@
         rel="stylesheet" />
 
     <!-- Favicon icon -->
-    <link rel="icon" href="img/favicon1.png" />
+    <link rel="icon" href="img/favicon.png" />
 
     <!-- vendor css -->
     <link rel="stylesheet" href="{{ asset('css/admin.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+
+    {{-- datatables --}}
+    <!-- Custom styles for this page -->
+    <link href="css/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" />
 
     <style>
         .pcoded-header .mobile-menu span,
         .pcoded-header .mobile-menu span::before,
         .pcoded-header .mobile-menu span::after {
             background-color: #000000 !important;
-            /* ganti #ff0000 dengan warna yang lo mau */
         }
     </style>
 
@@ -81,75 +84,10 @@
                                     class="feather icon-box"></i></span><span class="pcoded-mtext">Kelola
                                 Pendaftaran</span></a>
                         <ul class="pcoded-submenu">
-                            <li><a href="bc_alert.html">Alert</a></li>
-                            <li><a href="bc_button.html">Button</a></li>
-                            <li><a href="bc_badges.html">Badges</a></li>
-                            <li>
-                                <a href="bc_breadcrumb-pagination.html">Breadcrumb & paggination</a>
-                            </li>
-                            <li><a href="bc_card.html">Cards</a></li>
-                            <li><a href="bc_collapse.html">Collapse</a></li>
-                            <li><a href="bc_carousel.html">Carousel</a></li>
-                            <li><a href="bc_grid.html">Grid system</a></li>
-                            <li><a href="bc_progress.html">Progress</a></li>
-                            <li><a href="bc_modal.html">Modal</a></li>
-                            <li><a href="bc_spinner.html">Spinner</a></li>
-                            <li><a href="bc_tabs.html">Tabs & pills</a></li>
-                            <li>
-                                <a href="bc_typography.html">Typography</a>
-                            </li>
-                            <li>
-                                <a href="bc_tooltip-popover.html">Tooltip & popovers</a>
-                            </li>
-                            <li><a href="bc_toasts.html">Toasts</a></li>
-                            <li><a href="bc_extra.html">Other</a></li>
+                            <li><a href="bc_alert.html">Pemuda Pelopor</a></li>
+                            <li><a href="bc_button.html">PPAP</a></li>
+                            <li><a href="bc_badges.html">PPAN</a></li>
                         </ul>
-                    </li>
-                    <li class="nav-item pcoded-menu-caption">
-                        <label>Forms &amp; table</label>
-                    </li>
-                    <li class="nav-item">
-                        <a href="form_elements.html" class="nav-link"><span class="pcoded-micon"><i
-                                    class="feather icon-file-text"></i></span><span
-                                class="pcoded-mtext">Forms</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="tbl_bootstrap.html" class="nav-link"><span class="pcoded-micon"><i
-                                    class="feather icon-align-justify"></i></span><span class="pcoded-mtext">Bootstrap
-                                table</span></a>
-                    </li>
-                    <li class="nav-item pcoded-menu-caption">
-                        <label>Chart & Maps</label>
-                    </li>
-                    <li class="nav-item">
-                        <a href="chart-apex.html" class="nav-link"><span class="pcoded-micon"><i
-                                    class="feather icon-pie-chart"></i></span><span
-                                class="pcoded-mtext">Chart</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="map-google.html" class="nav-link"><span class="pcoded-micon"><i
-                                    class="feather icon-map"></i></span><span class="pcoded-mtext">Maps</span></a>
-                    </li>
-                    <li class="nav-item pcoded-menu-caption">
-                        <label>Pages</label>
-                    </li>
-                    <li class="nav-item pcoded-hasmenu">
-                        <a href="#!" class="nav-link"><span class="pcoded-micon"><i
-                                    class="feather icon-lock"></i></span><span
-                                class="pcoded-mtext">Authentication</span></a>
-                        <ul class="pcoded-submenu">
-                            <li>
-                                <a href="auth-signup.html" target="_blank">Sign up</a>
-                            </li>
-                            <li>
-                                <a href="auth-signin.html" target="_blank">Sign in</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a href="sample-page.html" class="nav-link"><span class="pcoded-micon"><i
-                                    class="feather icon-sidebar"></i></span><span class="pcoded-mtext">Sample
-                                page</span></a>
                     </li>
                 </ul>
             </div>
@@ -161,8 +99,7 @@
         <div class="m-header">
             <a class="mobile-menu" id="mobile-collapse" href="#!"><span></span></a>
             <a href="#!" class="b-brand">
-                <!-- ========   change your logo hear   ============ -->
-                <img src="img/logo1.png" alt="" width="85%" class="logo" />
+                <img src="img/logo.png" alt="" width="65%" class="logo" />
             </a>
             <a href="#!" class="mob-toggler">
                 <i class="feather icon-more-vertical"></i>
@@ -527,34 +464,13 @@
     <!-- Muat jQuery terlebih dahulu -->
     <script src="{{ asset('js/jquery.min.js') }}"></script>
     <script src="js/vendor-all.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" />
-    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="js/datatables/jquery.dataTables.min.js"></script>
+    <script src="js/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="js/datatables/datatables-demo.js"></script>
     <!-- Required Js -->
     <script src="js/plugins/bootstrap.min.js"></script>
     <script src="js/pcoded.min.js"></script>
 
-    <script>
-        $(document).ready(function() {
-            $("#dataTable").DataTable({
-                lengthMenu: [5, 10, 25, 50, 100],
-                pageLength: 10,
-                language: {
-                    lengthMenu: "Tampilkan _MENU_ entri",
-                    zeroRecords: "Tidak ditemukan data yang cocok",
-                    info: "Menampilkan _START_ sampai _END_ dari _TOTAL_ entri",
-                    infoEmpty: "Tidak ada data tersedia",
-                    infoFiltered: "(disaring dari total _MAX_ entri)",
-                    search: "Cari:",
-                    paginate: {
-                        first: "Pertama",
-                        last: "Terakhir",
-                        next: "Berikutnya",
-                        previous: "Sebelumnya",
-                    },
-                },
-            });
-        });
-    </script>
 </body>
 
 </html>

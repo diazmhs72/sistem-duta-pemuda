@@ -16,22 +16,23 @@
                                 {{-- syarat --}}
                                 <ol class="mx-2">
                                     <li>
-                                        warga negara indonesia yang bertaqwa kepada tuhan yang maha esa.
+                                        warga negara indonesia yang bertaqwa kepada tuhan yang maha esa
                                     </li>
                                     <li>KTP Tangerang Selatan</li>
                                     <li>Usia 17-30.</li>
-                                    <li>Berpendidikan minimal SMA/SLTA.</li>
-                                    <li>Belum menikah.</li>
-                                    <li>Surat keterangan kesehatan jasmani dan rohani dari dokter.</li>
+                                    <li>Berpendidikan minimal SMA/SLTA</li>
+                                    <li>Belum menikah</li>
+                                    <li>Surat keterangan kesehatan jasmani dan rohani dari dokter</li>
                                     <li>Telah melakukan kegiatan pengembangan masyarakat yang dibuktikan dengan laporan
                                         yang terdokumentasi dalam bentuk foto dan liputan media dan lain-lain</li>
-                                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
-                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nemo?</li>
-                                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
-                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nemo?</li>
-                                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
+                                    <li>Tidak merokok dan terbebas dari Narkoba</li>
+                                    <li>Memiliki wawasan kebangsaan dan cinta tanah air serta pengetahuan yang luas mengenai
+                                        isu-isu</li>
+                                    <li>Mampu berkomunikasi efektif dan mahir menggunakan media sosial seperti : email,
+                                        facebook, X dan lain-lain </li>
+                                    <li>Mengetahui dan menguasai seni dan budaya terutama kesenian daerah Provinsi Banten
+                                    </li>
+                                    <li>Tidak Pernah terlibat dalam tindakan kriminal</li>
                                 </ol>
                                 <div class="form-check text-left ml-3 my-4">
                                     <input class="form-check-input" type="checkbox" id="agreeTerms">

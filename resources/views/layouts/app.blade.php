@@ -90,7 +90,7 @@
                             <div class="mobile-nav"></div>
                             <!-- End Mobile Nav -->
                         </div>
-                        <div class="col-lg-7 col-md-9 col-12">
+                        <div class="d-flex col-lg-7 col-md-9 col-12 justify-content-center">
                             <!-- Main Menu -->
                             <div class="main-menu">
                                 <nav class="navigation">
@@ -107,19 +107,13 @@
                                         <li class="{{ request()->is('pages*') ? 'active' : '' }}">
                                             <a href="#">Berita</a>
                                         </li>
-                                        {{-- <li class="{{ request()->is('blogs*') ? 'active' : '' }}">
-                                            <a href="#">Blogs</a>
-                                        </li>
-                                        <li class="{{ request()->is('contact*') ? 'active' : '' }}">
-                                            <a href="#">Contact Us</a>
-                                        </li> --}}
                                     </ul>
                                 </nav>
                             </div>
                             <!--/ End Main Menu -->
                         </div>
-                        <div class="col-lg-2 col-12">
-                            <div class="get-quote">
+                        <div class="col-lg-2 col-12 ">
+                            <div class="get-quote float-right">
                                 <a href="{{ route('login') }}" class="btn">Login</a>
                             </div>
                         </div>
@@ -181,20 +175,7 @@
                                         </li>
                                         <li>
                                             <a href="#"><i class="fa fa-caret-right"
-                                                    aria-hidden="true"></i>About Us</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fa fa-caret-right"
-                                                    aria-hidden="true"></i>Services</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Our
-                                                Cases</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fa fa-caret-right"
-                                                    aria-hidden="true"></i>Other
-                                                Links</a>
+                                                    aria-hidden="true"></i>Kategori</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -202,24 +183,11 @@
                                     <ul>
                                         <li>
                                             <a href="#"><i class="fa fa-caret-right"
-                                                    aria-hidden="true"></i>Consuling</a>
+                                                    aria-hidden="true"></i>Alur seleksi</a>
                                         </li>
                                         <li>
                                             <a href="#"><i class="fa fa-caret-right"
-                                                    aria-hidden="true"></i>Finance</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fa fa-caret-right"
-                                                    aria-hidden="true"></i>Testimonials</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fa fa-caret-right"
-                                                    aria-hidden="true"></i>FAQ</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fa fa-caret-right"
-                                                    aria-hidden="true"></i>Contact
-                                                Us</a>
+                                                    aria-hidden="true"></i>Berita</a>
                                         </li>
                                     </ul>
                                 </div>
