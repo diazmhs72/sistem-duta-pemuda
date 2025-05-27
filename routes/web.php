@@ -36,3 +36,11 @@ Route::get('/index', function () {
 Route::get('/admin', function () {
     return view('admin/index');
 })->name('admin');
+
+Route::get('/editor', function () {
+    return view('admin/editor');
+})->name('editor');
+
+Route::get('/blog', function () {
+    return view('admin/blog');
+})->name('blog');

@@ -134,26 +134,96 @@
         <!-- Footer Top -->
         <div class="footer-top">
             <div class="container">
-                <!-- Logo Section -->
-                <div style="display: flex; justify-content: center; gap: 30px; margin-bottom: 30px; flex-wrap: wrap;">
-                    <img src="img/logo-digiyok.png" alt="DIGIYOK" style="height: 50px;">
-                    <img src="img/logo-dispora.png" alt="DISPORA" style="height: 50px;">
-                    <img src="img/logo-unsoed.png" alt="UNIVERSITAS" style="height: 50px;">
-                </div>
-
-                <!-- Contact Us Title -->
-                <h3 style="text-align: center; color: white; margin-bottom: 20px;">CONTACT US</h3>
-
-                <!-- Contact Info -->
-                <div
-                    style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; align-items: center; color: white;">
-                    <div style="display: flex; align-items: center; gap: 10px;">
-                        <img src="img/logo-ig.png" alt="Instagram">
-                        <span>Instagram: @dutapemuda.tangerangselatan</span>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="single-footer">
+                            <h2>About Us</h2>
+                            <p>
+                                Lorem ipsum dolor sit am consectetur adipisicing elit do
+                                eiusmod tempor incididunt ut labore dolore magna.
+                            </p>
+                            <!-- Social -->
+                            <ul class="social">
+                                <li>
+                                    <a href="#"><i class="icofont-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icofont-google-plus"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icofont-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icofont-vimeo"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icofont-pinterest"></i></a>
+                                </li>
+                            </ul>
+                            <!-- End Social -->
+                        </div>
                     </div>
-                    <div style="display: flex; align-items: center; gap: 10px;">
-                        <img src="img/wa-icon-footer.png" alt="WhatsApp">
-                        <span>WhatsApp: +62 857-1817-1400</span>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="single-footer f-link">
+                            <h2>Quick Links</h2>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><i class="fa fa-caret-right"
+                                                    aria-hidden="true"></i>Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-caret-right"
+                                                    aria-hidden="true"></i>Kategori</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><i class="fa fa-caret-right"
+                                                    aria-hidden="true"></i>Alur seleksi</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-caret-right"
+                                                    aria-hidden="true"></i>Berita</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="single-footer">
+                            <h2>Open Hours</h2>
+                            <p>
+                                Lorem ipsum dolor sit ame consectetur adipisicing elit do
+                                eiusmod tempor incididunt.
+                            </p>
+                            <ul class="time-sidual">
+                                <li class="day">Monday - Fridayp <span>8.00-20.00</span></li>
+                                <li class="day">Saturday <span>9.00-18.30</span></li>
+                                <li class="day">Monday - Thusday <span>9.00-15.00</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="single-footer">
+                            <h2>Newsletter</h2>
+                            <p>
+                                subscribe to our newsletter to get allour news in your inbox..
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            </p>
+                            <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+                                <input name="email" placeholder="Email Address" class="common-input"
+                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'"
+                                    required="" type="email" />
+                                <button class="button">
+                                    <i class="icofont icofont-paper-plane"></i>
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -220,8 +290,8 @@
     <script src="{{ asset('js/main.js') }}"></script>
 
     <script>
-        $(document).ready(function () {
-            $('#btn-lanjut').click(function () {
+        $(document).ready(function() {
+            $('#btn-lanjut').click(function() {
                 if (!$('#agreeTerms').is(':checked')) {
                     $('#alert-warning').removeClass('d-none');
                 } else {
@@ -234,7 +304,7 @@
                 }
             });
 
-            $('#myForm').on('submit', function (event) {
+            $('#myForm').on('submit', function(event) {
                 event.preventDefault();
 
                 let form = this;

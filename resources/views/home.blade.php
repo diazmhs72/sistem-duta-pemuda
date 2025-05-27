@@ -130,7 +130,7 @@
                         <!-- single-schedule -->
                         <div class="single-schedule first">
                             <div class="">
-                                <img src="img\pp.png" style="width: 100%">
+                                <img src="img\pp.png" style="width: 100%; border-radius: 40px">
                             </div>
                         </div>
                     </div>
@@ -138,7 +138,7 @@
                         <!-- single-schedule -->
                         <div class="single-schedule middle">
                             <div class="">
-                                <img src="img\ppap.png" style="width: 100%">
+                                <img src="img\ppap.png" style="width: 100%; border-radius: 40px">
                             </div>
                         </div>
                     </div>
@@ -146,7 +146,7 @@
                         <!-- single-schedule -->
                         <div class="single-schedule last">
                             <div class="">
-                                <img src="img\ppan.png" style="width: 100%">
+                                <img src="img\ppan.png" style="width: 100%; border-radius: 40px">
                             </div>
                         </div>
                     </div>
