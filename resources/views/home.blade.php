@@ -287,12 +287,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h2>Keep up with Our Most Recent Medical News.</h2>
-                        <img src="img/section-img.png" alt="#" />
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit praesent
-                            aliquet. pretiumts
-                        </p>
+                        <h2>Informasi Terkini</h2>
                     </div>
                 </div>
             </div>
@@ -301,7 +296,7 @@
                     <!-- Single Blog -->
                     <div class="single-news">
                         <div class="news-head">
-                            <img src="img/blog1.jpg" alt="#" />
+                            <img src="img/slider2.png" alt="#" />
                         </div>
                         <div class="news-body">
                             <div class="news-content">
@@ -322,7 +317,7 @@
                     <!-- Single Blog -->
                     <div class="single-news">
                         <div class="news-head">
-                            <img src="img/blog2.jpg" alt="#" />
+                            <img src="img/slider3.png" alt="#" />
                         </div>
                         <div class="news-body">
                             <div class="news-content">
@@ -343,7 +338,7 @@
                     <!-- Single Blog -->
                     <div class="single-news">
                         <div class="news-head">
-                            <img src="img/blog3.jpg" alt="#" />
+                            <img src="img/slider.png" alt="#" />
                         </div>
                         <div class="news-body">
                             <div class="news-content">
