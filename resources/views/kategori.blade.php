@@ -7,7 +7,7 @@
     <div class="container-fluid px-1 py-5 mx-auto">
         <div class="row d-flex justify-content-center">
             <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
-                <div class="card" style="border-radius: 15px;">
+                <div class="card px-lg-5 px-3" style="border-radius: 15px;">
                     <div class="card-body py-4 text-left">
                         <h2 class="text-center">Pilih Kategori</h2>
                         <h6 class="text-muted text-center mb-5">Pilih program yang kamu inginkan.</h6>

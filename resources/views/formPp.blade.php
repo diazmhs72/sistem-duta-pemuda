@@ -11,8 +11,8 @@
                         <h3 class="text-center">Syarat dan Ketentuan</h3>
                         <p class="text-muted mb-4">Pastikan Anda memahami seluruh syarat dan ketentuan yang berlaku.</p>
 
-                        <div class="card" style="border-radius: 15px;">
-                            <div class="card-body py-3 text-left">
+                        <div class="card px-lg-5 px-3" style="border-radius: 15px;">
+                            <div class="card-body py-3">
                                 {{-- syarat --}}
                                 <ol class="mx-2">
                                     <li>
@@ -63,8 +63,8 @@
                         <h3 class="text-center">Pendaftaran Pemuda Pelopor Tahun 2025</h3>
                         <p class="text-muted mb-4">Isi formulir ini dengan data yang benar dan lengkap.</p>
 
-                        <div class="card" style="border-radius: 15px;">
-                            <div class="card-body py-3">
+                        <div class="card px-lg-5 px-3" style="border-radius: 15px;">
+                            <div class="card-body py-3 ">
 
                                 <form id="myForm" class="form-card mt-4 needs-validation" novalidate>
                                     <div class="row justify-content-between text-left">
