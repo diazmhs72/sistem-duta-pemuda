@@ -90,11 +90,11 @@
 
                                     <div class="d-flex justify-content-center flex-column">
                                         <button class="btn mb-3" style="width: 100%"
-                                            onclick="window.location.href='{{ route('pendaftaran') }}'">Login</button>
+                                            onclick="window.location.href='{{ route('kategori') }}'">Login</button>
                                         <button class="btn-light py-2"
                                             style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.2)"><img
                                                 src="img/google.png" class="mr-2" alt="" width="32px"
-                                                onclick="window.location.href='{{ route('pendaftaran') }}'">Login
+                                                onclick="window.location.href='#'">Login
                                             dengan
                                             google</button>
                                     </div>

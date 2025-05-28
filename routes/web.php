@@ -14,16 +14,21 @@ Route::get('/formpp', function () {
     return view('formPp');
 });
 
-Route::get('/register', function () {
-    return view('auth/register');
-})->name('register');
-
 Route::get('/login', function () {
     return view('auth/login');
 })->name('login');
+
 Route::get('/pendaftaran', function () {
     return view('formPp');
-})->name('pendaftaran');
+})->name('pendaftaranPp');
+
+Route::get('/pendaftaran', function () {
+    return view('formPPAN_PPAP');
+})->name('pendaftaranPpap');
+
+Route::get('/pendaftaran', function () {
+    return view('formPPAN_PPAP');
+})->name('pendaftaranPpan');
 
 Route::get('/kategori', function () {
     return view('kategori');
@@ -44,3 +49,7 @@ Route::get('/editor', function () {
 Route::get('/blog', function () {
     return view('admin/blog');
 })->name('blog');
+
+Route::get('/berita', function () {
+    return view('berita');
+})->name('berita');

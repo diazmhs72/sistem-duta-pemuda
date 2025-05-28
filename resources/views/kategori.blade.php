@@ -14,17 +14,19 @@
                         {{-- kolom kategori --}}
                         <div class="mx-lg-5 mx-md-3 mx-1">
                             <div class="program-item mb-5 d-flex flex-row align-items-center"
-                                onclick="window.location.href='pendaftaran'">
+                                onclick="window.location.href='pendaftaranPp'">
                                 <img src="img/logo_pp.png" alt="" width="47px" class="mr-3">
                                 <h6>Pemuda Pelopor (PP)</h6>
                             </div>
 
-                            <div class="program-item mb-5 d-flex flex-row align-items-center">
+                            <div class="program-item mb-5 d-flex flex-row align-items-center"
+                                onclick="window.location.href='pendaftaranPpap'">
                                 <img src="img/logo_ppap.png" alt="" width="52px" class="mr-3">
                                 <h6>Pertukaran Pemuda Antar Provinsi (PPAP)</h6>
                             </div>
 
-                            <div class="program-item mb-5 d-flex flex-row align-items-center">
+                            <div class="program-item mb-5 d-flex flex-row align-items-center"
+                                onclick="window.location.href='pendaftaranPpan'">
                                 <img src="img/logo_ppan.png" alt="" width="52px" class="mr-3">
                                 <h6>Pertukaran Pemuda Antar Negara (PPAN)</h6>
                             </div>
