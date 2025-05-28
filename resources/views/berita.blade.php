@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'form')
+@section('title', 'Berita')
 @section('content')
 
     <section class="blog section" id="blog">
@@ -12,7 +12,9 @@
                             TAHUN 2025</h2>
                     </div>
                     <h3 style="margin-bottom: 30px; font-size: medium;">25/06/2024, 08:45 WIB</h3>
-                    <p style="text-align: justify; font-size: medium;">
+                    <img src="img/slider.png" alt="Berita" class="img-fluid"
+                        style="width: 100%; height: auto; margin-bottom: 20px;">
+                    <p style="text-align: justify; font-size: medium; margin-bottom: 50px;">
                         KOMPAS.com - Pemerintah Indonesia melalui Badan Siber dan Sandi Negara (BSSN) akhirnya
                         mengungkap penyebab gangguan Pusat Data Nasional (PDN) yang terjadi sejak Kamis (20/6/2024)
                         pekan lalu.<br><br>
