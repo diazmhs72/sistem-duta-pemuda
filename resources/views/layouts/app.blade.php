@@ -99,13 +99,13 @@
                                             <a href="{{ route('home') }}">Beranda</a>
                                         </li>
                                         <li class="{{ request()->is('doctors*') ? 'active' : '' }}">
-                                            <a href="#">Kategori</a>
+                                            <a href="/kategori">Kategori</a>
                                         </li>
-                                        <li class="{{ request()->is('services*') ? 'active' : '' }}">
-                                            <a href="#">Alur seleksi</a>
+                                        <li class="{{ request()->is('doctors*') ? 'active' : '' }}">
+                                            <a href="/kategori">FAQ</a>
                                         </li>
                                         <li class="{{ request()->is('pages*') ? 'active' : '' }}">
-                                            <a href="#">Berita</a>
+                                            <a href="/berita">Berita</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -160,12 +160,10 @@
                                 <div class="col-lg-6 col-md-6 col-12">
                                     <ul>
                                         <li>
-                                            <a href="#"><i class="fa fa-caret-right"
-                                                    aria-hidden="true"></i>Home</a>
+                                            <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="fa fa-caret-right"
-                                                    aria-hidden="true"></i>Kategori</a>
+                                            <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Kategori</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -176,8 +174,7 @@
                                                 seleksi</a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="fa fa-caret-right"
-                                                    aria-hidden="true"></i>Berita</a>
+                                            <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Berita</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -269,8 +266,8 @@
     <script src="{{ asset('js/main.js') }}"></script>
 
     <script>
-        $(document).ready(function() {
-            $('#btn-lanjut').click(function() {
+        $(document).ready(function () {
+            $('#btn-lanjut').click(function () {
                 if (!$('#agreeTerms').is(':checked')) {
                     $('#alert-warning').removeClass('d-none');
                 } else {
@@ -283,7 +280,7 @@
                 }
             });
 
-            $('#myForm').on('submit', function(event) {
+            $('#myForm').on('submit', function (event) {
                 event.preventDefault();
 
                 let form = this;
