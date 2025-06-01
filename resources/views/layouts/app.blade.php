@@ -160,10 +160,12 @@
                                 <div class="col-lg-6 col-md-6 col-12">
                                     <ul>
                                         <li>
-                                            <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a>
+                                            <a href="#"><i class="fa fa-caret-right"
+                                                    aria-hidden="true"></i>Home</a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Kategori</a>
+                                            <a href="#"><i class="fa fa-caret-right"
+                                                    aria-hidden="true"></i>Kategori</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -174,7 +176,8 @@
                                                 seleksi</a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Berita</a>
+                                            <a href="#"><i class="fa fa-caret-right"
+                                                    aria-hidden="true"></i>Berita</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -224,7 +227,7 @@
     </footer>
     <!--/ End Footer Area -->
 
-    <!-- jQuery Min JS -->
+    {{-- <!-- jQuery Min JS -->
     <script src="{{ asset('js/jquery.min.js') }}"></script>
     <!-- jQuery Migrate JS -->
     <script src="{{ asset('js/jquery-migrate-3.0.0.js') }}"></script>
@@ -264,10 +267,11 @@
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <!-- Main JS -->
     <script src="{{ asset('js/main.js') }}"></script>
+    --}}
 
-    <script>
-        $(document).ready(function () {
-            $('#btn-lanjut').click(function () {
+    {{-- <script>
+        $(document).ready(function() {
+            $('#btn-lanjut').click(function() {
                 if (!$('#agreeTerms').is(':checked')) {
                     $('#alert-warning').removeClass('d-none');
                 } else {
@@ -280,7 +284,7 @@
                 }
             });
 
-            $('#myForm').on('submit', function (event) {
+            $('#myForm').on('submit', function(event) {
                 event.preventDefault();
 
                 let form = this;
@@ -308,7 +312,7 @@
                 }
             });
         });
-    </script>
+    </script> --}}
 
     @stack('scripts')
 </body>
