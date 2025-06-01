@@ -47,6 +47,8 @@
     <link rel="stylesheet" href="{{ asset('css/form.css') }}" />
 
     @stack('styles')
+    <!-- jQuery Min JS -->
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
 </head>
 
 <body>
@@ -227,8 +229,7 @@
     </footer>
     <!--/ End Footer Area -->
 
-    {{-- <!-- jQuery Min JS -->
-    <script src="{{ asset('js/jquery.min.js') }}"></script>
+
     <!-- jQuery Migrate JS -->
     <script src="{{ asset('js/jquery-migrate-3.0.0.js') }}"></script>
     <!-- jQuery UI JS -->
@@ -267,52 +268,7 @@
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <!-- Main JS -->
     <script src="{{ asset('js/main.js') }}"></script>
-    --}}
 
-    {{-- <script>
-        $(document).ready(function() {
-            $('#btn-lanjut').click(function() {
-                if (!$('#agreeTerms').is(':checked')) {
-                    $('#alert-warning').removeClass('d-none');
-                } else {
-                    $('#alert-warning').addClass('d-none');
-                    $('#wizard-step-1').hide();
-                    $('#wizard-step-2').show();
-                    $("html, body").animate({
-                        scrollTop: 0
-                    }, "slow");
-                }
-            });
-
-            $('#myForm').on('submit', function(event) {
-                event.preventDefault();
-
-                let form = this;
-                const checkBox = document.getElementById("invalidCheck");
-                let isValid = form.checkValidity();
-
-                // Tampilkan alert jika form tidak valid atau checkbox tidak dicentang
-                if (!isValid || !checkBox.checked) {
-                    $('#alert-warning-2').removeClass('d-none');
-                } else {
-                    $('#alert-warning-2').addClass('d-none');
-                }
-
-                // Jika checkbox tidak dicentang, tambahkan pesan khusus
-                if (!checkBox.checked) {
-                    $('#alert-warning-2').text("Silakan centang kotak persetujuan dan lengkapi data Anda.");
-                } else if (!isValid) {
-                    $('#alert-warning-2').text("Silakan lengkapi data Anda.");
-                }
-
-                if (isValid && checkBox.checked) {
-                    form.submit();
-                } else {
-                    form.classList.add('was-validated');
-                }
-            });
-        });
-    </script> --}}
 
     @stack('scripts')
 </body>
