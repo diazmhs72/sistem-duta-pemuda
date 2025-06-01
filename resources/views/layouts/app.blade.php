@@ -102,7 +102,7 @@
                                             <a href="/kategori">Kategori</a>
                                         </li>
                                         <li class="{{ request()->is('doctors*') ? 'active' : '' }}">
-                                            <a href="/kategori">FAQ</a>
+                                            <a href="/faq">FAQ</a>
                                         </li>
                                         <li class="{{ request()->is('pages*') ? 'active' : '' }}">
                                             <a href="/berita">Berita</a>
