@@ -1,3 +1,8 @@
+@extends('layouts.app')
+@section('title', 'Berita')
+@section('content')
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -73,10 +78,16 @@
                                 akun</span></a>
                         <ul class="pcoded-submenu">
                             <li>
-                                <a href="{{ route('editor') }}">Editor</a>
+                                <a href="{{ route('editor') }}">Admin</a>
                             </li>
                             <li>
-                                <a href="layout-horizontal.html" target="_blank">Peserta</a>
+                                <a href="{{ route('editor') }}">Juri</a>
+                            </li>
+                            <li>
+                                <a href="layout-horizontal.html" target="_blank">Verifikator</a>
+                            </li>
+                            <li>
+                                <a href="layout-horizontal.html" target="_blank">Pendaftar</a>
                             </li>
                         </ul>
                     </li>
@@ -110,8 +121,8 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <div class="dropdown">
-                        <a class="dropdown-toggle h-drop" href="#" data-toggle="dropdown">
-                            Dropdown
+                        <a class="dropdown-toggle h-drop" href="\.." data-toggle="dropdown">
+                            Home
                         </a>
                         <div class="dropdown-menu profile-notification">
                             <ul class="pro-body">
@@ -134,8 +145,8 @@
                 </li>
                 <li class="nav-item">
                     <div class="dropdown mega-menu">
-                        <a class="dropdown-toggle h-drop" href="#" data-toggle="dropdown">
-                            Mega
+                        <a class="dropdown-toggle h-drop" href="/Kategori" data-toggle="dropdown">
+                            Kategori
                         </a>
                         <div class="dropdown-menu profile-notification">
                             <div class="row no-gutters">
@@ -172,33 +183,27 @@
                                     <h6 class="mega-title">Forms</h6>
                                     <ul class="pro-body">
                                         <li>
-                                            <a href="#!" class="dropdown-item"><i
-                                                    class="feather icon-minus"></i>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-minus"></i>
                                                 Elements</a>
                                         </li>
                                         <li>
-                                            <a href="#!" class="dropdown-item"><i
-                                                    class="feather icon-minus"></i>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-minus"></i>
                                                 Validation</a>
                                         </li>
                                         <li>
-                                            <a href="#!" class="dropdown-item"><i
-                                                    class="feather icon-minus"></i>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-minus"></i>
                                                 Masking</a>
                                         </li>
                                         <li>
-                                            <a href="#!" class="dropdown-item"><i
-                                                    class="feather icon-minus"></i>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-minus"></i>
                                                 Wizard</a>
                                         </li>
                                         <li>
-                                            <a href="#!" class="dropdown-item"><i
-                                                    class="feather icon-minus"></i>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-minus"></i>
                                                 Picker</a>
                                         </li>
                                         <li>
-                                            <a href="#!" class="dropdown-item"><i
-                                                    class="feather icon-minus"></i>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-minus"></i>
                                                 Select</a>
                                         </li>
                                     </ul>
@@ -211,23 +216,19 @@
                                                 Email</a>
                                         </li>
                                         <li>
-                                            <a href="#!" class="dropdown-item"><i
-                                                    class="feather icon-clipboard"></i>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-clipboard"></i>
                                                 Task</a>
                                         </li>
                                         <li>
-                                            <a href="#!" class="dropdown-item"><i
-                                                    class="feather icon-check-square"></i>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-check-square"></i>
                                                 To-Do</a>
                                         </li>
                                         <li>
-                                            <a href="#!" class="dropdown-item"><i
-                                                    class="feather icon-image"></i>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-image"></i>
                                                 Gallery</a>
                                         </li>
                                         <li>
-                                            <a href="#!" class="dropdown-item"><i
-                                                    class="feather icon-help-circle"></i>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-help-circle"></i>
                                                 Helpdesk</a>
                                         </li>
                                     </ul>
@@ -236,28 +237,261 @@
                                     <h6 class="mega-title">Extension</h6>
                                     <ul class="pro-body">
                                         <li>
-                                            <a href="#!" class="dropdown-item"><i
-                                                    class="feather icon-file-plus"></i>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-file-plus"></i>
                                                 Editor</a>
                                         </li>
                                         <li>
-                                            <a href="#!" class="dropdown-item"><i
-                                                    class="feather icon-file-minus"></i>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-file-minus"></i>
                                                 Invoice</a>
                                         </li>
                                         <li>
-                                            <a href="#!" class="dropdown-item"><i
-                                                    class="feather icon-calendar"></i>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-calendar"></i>
                                                 Full calendar</a>
                                         </li>
                                         <li>
-                                            <a href="#!" class="dropdown-item"><i
-                                                    class="feather icon-upload-cloud"></i>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-upload-cloud"></i>
                                                 File upload</a>
                                         </li>
                                         <li>
-                                            <a href="#!" class="dropdown-item"><i
-                                                    class="feather icon-scissors"></i>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-scissors"></i>
+                                                Image cropper</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown mega-menu">
+                        <a class="dropdown-toggle h-drop" href="/Kategori" data-toggle="dropdown">
+                            FAQ
+                        </a>
+                        <div class="dropdown-menu profile-notification">
+                            <div class="row no-gutters">
+                                <div class="col">
+                                    <h6 class="mega-title">UI Element</h6>
+                                    <ul class="pro-body">
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="fas fa-circle"></i>
+                                                Alert</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="fas fa-circle"></i>
+                                                Button</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="fas fa-circle"></i>
+                                                Badges</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="fas fa-circle"></i>
+                                                Cards</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="fas fa-circle"></i>
+                                                Modal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="fas fa-circle"></i>
+                                                Tabs & pills</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <h6 class="mega-title">Forms</h6>
+                                    <ul class="pro-body">
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-minus"></i>
+                                                Elements</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-minus"></i>
+                                                Validation</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-minus"></i>
+                                                Masking</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-minus"></i>
+                                                Wizard</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-minus"></i>
+                                                Picker</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-minus"></i>
+                                                Select</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <h6 class="mega-title">Application</h6>
+                                    <ul class="pro-body">
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-mail"></i>
+                                                Email</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-clipboard"></i>
+                                                Task</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-check-square"></i>
+                                                To-Do</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-image"></i>
+                                                Gallery</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-help-circle"></i>
+                                                Helpdesk</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <h6 class="mega-title">Extension</h6>
+                                    <ul class="pro-body">
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-file-plus"></i>
+                                                Editor</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-file-minus"></i>
+                                                Invoice</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-calendar"></i>
+                                                Full calendar</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-upload-cloud"></i>
+                                                File upload</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-scissors"></i>
+                                                Image cropper</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown mega-menu">
+                        <a class="dropdown-toggle h-drop" href="/Kategori" data-toggle="dropdown">
+                            Berita
+                        </a>
+                        <div class="dropdown-menu profile-notification">
+                            <div class="row no-gutters">
+                                <div class="col">
+                                    <h6 class="mega-title">UI Element</h6>
+                                    <ul class="pro-body">
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="fas fa-circle"></i>
+                                                Alert</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="fas fa-circle"></i>
+                                                Button</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="fas fa-circle"></i>
+                                                Badges</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="fas fa-circle"></i>
+                                                Cards</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="fas fa-circle"></i>
+                                                Modal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="fas fa-circle"></i>
+                                                Tabs & pills</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <h6 class="mega-title">Forms</h6>
+                                    <ul class="pro-body">
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-minus"></i>
+                                                Elements</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-minus"></i>
+                                                Validation</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-minus"></i>
+                                                Masking</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-minus"></i>
+                                                Wizard</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-minus"></i>
+                                                Picker</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-minus"></i>
+                                                Select</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <h6 class="mega-title">Application</h6>
+                                    <ul class="pro-body">
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-mail"></i>
+                                                Email</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-clipboard"></i>
+                                                Task</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-check-square"></i>
+                                                To-Do</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-image"></i>
+                                                Gallery</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-help-circle"></i>
+                                                Helpdesk</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <h6 class="mega-title">Extension</h6>
+                                    <ul class="pro-body">
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-file-plus"></i>
+                                                Editor</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-file-minus"></i>
+                                                Invoice</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-calendar"></i>
+                                                Full calendar</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-upload-cloud"></i>
+                                                File upload</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="dropdown-item"><i class="feather icon-scissors"></i>
                                                 Image cropper</a>
                                         </li>
                                     </ul>
@@ -372,18 +606,15 @@
                             </div>
                             <ul class="pro-body">
                                 <li>
-                                    <a href="user-profile.html" class="dropdown-item"><i
-                                            class="feather icon-user"></i>
+                                    <a href="user-profile.html" class="dropdown-item"><i class="feather icon-user"></i>
                                         Profile</a>
                                 </li>
                                 <li>
-                                    <a href="email_inbox.html" class="dropdown-item"><i
-                                            class="feather icon-mail"></i>
+                                    <a href="email_inbox.html" class="dropdown-item"><i class="feather icon-mail"></i>
                                         My Messages</a>
                                 </li>
                                 <li>
-                                    <a href="auth-signin.html" class="dropdown-item"><i
-                                            class="feather icon-lock"></i>
+                                    <a href="auth-signin.html" class="dropdown-item"><i class="feather icon-lock"></i>
                                         Lock Screen</a>
                                 </li>
                             </ul>
