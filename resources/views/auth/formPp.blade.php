@@ -34,9 +34,9 @@
                                     </li>
                                     <li>Tidak Pernah terlibat dalam tindakan kriminal</li>
                                 </ol>
-                                <div class="form-check text-left ml-3 my-4">
+                                <div class="form-check text-left ml-5 my-4">
                                     <input class="form-check-input" type="checkbox" id="agreeTerms">
-                                    <label class="form-check-label" for="agreeTerms">
+                                    <label class="" for="agreeTerms">
                                         Saya menyetujui syarat dan ketentuan pendaftaran Duta Pemuda.
                                     </label>
                                 </div>
@@ -116,25 +116,27 @@
                                                             </option>
                                                         @endfor
                                                     </select>
+                                                    <div class="invalid-feedback"></div>
                                                 </div>
 
                                                 <div class="flex-fill mr-3">
                                                     <select class="form-control w-100" id="tgl_lahir_mm" name="tgl_lahir_mm"
                                                         required>
                                                         <option value="">mm</option>
-                                                        <option value="1">Januari</option>
-                                                        <option value="2">Februari</option>
-                                                        <option value="3">Maret</option>
-                                                        <option value="4">April</option>
+                                                        <option value="1">Jan</option>
+                                                        <option value="2">Feb</option>
+                                                        <option value="3">Mar</option>
+                                                        <option value="4">Apr</option>
                                                         <option value="5">Mei</option>
-                                                        <option value="6">Juni</option>
-                                                        <option value="7">Juli</option>
-                                                        <option value="8">Agustus</option>
-                                                        <option value="9">September</option>
-                                                        <option value="10">Oktober</option>
-                                                        <option value="11">November</option>
-                                                        <option value="12">Desember</option>
+                                                        <option value="6">Jun</option>
+                                                        <option value="7">Jul</option>
+                                                        <option value="8">Agu</option>
+                                                        <option value="9">Sep</option>
+                                                        <option value="10">Okt</option>
+                                                        <option value="11">Nov</option>
+                                                        <option value="12">Des</option>
                                                     </select>
+                                                    <div class="invalid-feedback"></div>
                                                 </div>
 
                                                 <div class="flex-fill">
@@ -147,6 +149,7 @@
                                                             }
                                                         @endphp
                                                     </select>
+                                                    <div class="invalid-feedback"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -181,7 +184,7 @@
                                             <label class="form-control-label h6 px-3">Desa/Kelurahan<span
                                                     class="text-danger">
                                                     *</span></label>
-                                            <select class="form-control w-100" id="desa" name="kecamatan" required>
+                                            <select class="form-control w-100" id="desa" name="desa" required>
                                                 <option value="">--Pilih Desa--</option>
                                             </select>
                                             <div class="invalid-feedback">Wajib diisi.</div>
@@ -222,15 +225,24 @@
                                         </div>
                                     </div>
 
-                                    <div class="form-group text-left ml-5">
-                                        <div class="form-check mt-3">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                id="invalidCheck" required>
-                                            <label class="form-check-label">Saya menyatakan bahwa seluruh data yang saya
-                                                isi
-                                                adalah benar.</label>
-                                        </div>
+
+                                    {{-- <div class="form-check mt-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck"
+                                            required>
+                                        <label class="">Saya menyatakan bahwa seluruh data yang saya
+                                            isi
+                                            adalah benar.</label>
+                                    </div> --}}
+
+                                    <div class="form-check text-left ml-5 my-4">
+                                        <input class="form-check-input" type="checkbox" id="invalidCheck" required>
+                                        <label class="">
+                                            Saya menyatakan bahwa seluruh data yang saya isi adalah benar.
+                                        </label>
                                     </div>
+
+
+
                             </div>
                             <div id="alert-warning-2" class="alert alert-danger d-none" role="alert">
                                 Silakan lengkapi data anda.
@@ -373,7 +385,7 @@
                         // PENTING: Refresh NiceSelect setelah update options
                         refreshNiceSelect(provinsiSelect);
 
-                        console.log('✅ Berhasil load', provinsiData.length, 'provinsi dan refresh NiceSelect');
+                        console.log('Berhasil load', provinsiData.length, 'provinsi dan refresh NiceSelect');
                     }
 
                 } catch (error) {
@@ -385,7 +397,7 @@
                 // Event handler untuk provinsi
                 $(provinsiSelect).on('change', async function() {
                     const selectedValue = this.value;
-                    console.log('🔄 Provinsi dipilih:', selectedValue);
+                    console.log('Provinsi dipilih:', selectedValue);
 
                     if (!selectedValue) {
                         // Reset semua dropdown di bawahnya
@@ -400,8 +412,6 @@
                     }
 
                     try {
-                        // Show loading state
-                        kotaSelect.innerHTML = '<option value="">Loading kota...</option>';
                         refreshNiceSelect(kotaSelect);
 
                         const res = await fetch(`/kota/${selectedValue}`);
@@ -443,7 +453,7 @@
                 // Event handler untuk kota
                 $(kotaSelect).on('change', async function() {
                     const selectedValue = this.value;
-                    console.log('🔄 Kota dipilih:', selectedValue);
+                    console.log('Kota dipilih:', selectedValue);
 
                     if (!selectedValue) {
                         kecamatanSelect.innerHTML = '<option value="">--Pilih Kecamatan--</option>';
@@ -454,7 +464,6 @@
                     }
 
                     try {
-                        kecamatanSelect.innerHTML = '<option value="">Loading kecamatan...</option>';
                         refreshNiceSelect(kecamatanSelect);
 
                         const res = await fetch(`/kecamatan/${selectedValue}`);
@@ -495,7 +504,7 @@
                 // Event handler untuk kecamatan
                 $(kecamatanSelect).on('change', async function() {
                     const selectedValue = this.value;
-                    console.log('🔄 Kecamatan dipilih:', selectedValue);
+                    console.log('Kecamatan dipilih:', selectedValue);
 
                     if (!selectedValue) {
                         desaSelect.innerHTML = '<option value="">--Pilih Desa--</option>';
@@ -504,7 +513,6 @@
                     }
 
                     try {
-                        desaSelect.innerHTML = '<option value="">Loading desa...</option>';
                         refreshNiceSelect(desaSelect);
 
                         const res = await fetch(`/desa/${selectedValue}`);
@@ -541,7 +549,7 @@
             $(document).ready(function() {
                 // Delay sedikit untuk memastikan semua elemen sudah siap
                 setTimeout(function() {
-                    console.log('🚀 Dokumen ready, trigger load provinsi...');
+                    console.log('Dokumen ready, trigger load provinsi...');
 
                     // Trigger event load provinsi jika diperlukan
                     // atau panggil fungsi load provinsi di sini

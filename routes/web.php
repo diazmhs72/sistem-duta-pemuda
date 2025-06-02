@@ -11,32 +11,28 @@ use App\Http\Controllers\LocationController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
-Route::get('/formppan', function () {
-    return view('formPPAN_PPAP');
-});
+
 
 Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/formpp', function () {
-    return view('formPp');
-});
+
 
 Route::get('/login', function () {
     return view('auth/login');
 })->name('login');
 
 Route::get('/pendaftaranPp', function () {
-    return view('formPp');
+    return view('auth/formPp');
 })->name('pendaftaranPp');
 
 Route::get('/pendaftaranPpap', function () {
-    return view('formPPAN_PPAP');
+    return view('auth/formPPAN_PPAP');
 })->name('pendaftaranPpap');
 
 Route::get('/pendaftaranPpan', function () {
-    return view('formPPAN_PPAP');
+    return view('auth/formPPAN_PPAP');
 })->name('pendaftaranPpan');
 
 Route::get('/kategori', function () {
@@ -62,6 +58,16 @@ Route::get('/blog', function () {
 Route::get('/berita', function () {
     return view('berita');
 })->name('berita');
+
+Route::get('/profile', function () {
+    return view('pendaftar/profile');
+})->name('profile');
+
+Route::get('/ubahPassword', function () {
+    return view('pendaftar/ubahPassword');
+})->name('ubahPassword');
+
+
 
 Route::get('/provinsi', [LocationController::class, 'getProvinsi']);
 Route::get('/kota/{kodeProvinsi}', [LocationController::class, 'getKota']);
