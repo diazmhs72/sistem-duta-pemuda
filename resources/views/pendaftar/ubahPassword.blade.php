@@ -9,12 +9,6 @@
                     <div class="card card-primary card-outline mt-5">
                         <div class="card-body box-profile">
                             <form>
-
-                                <div data-mdb-input-init class="form-outline mb-4">
-                                    <label class="form-control-label" for="form3Example3cg">Password Lama</label>
-                                    <input type="email" id="form3Example3cg" class="form-control form-control-lg" />
-                                </div>
-
                                 <div data-mdb-input-init class="form-outline mb-4">
                                     <label class="form-control-label" for="form3Example4cg">Password Baru</label>
                                     <input type="password" id="form3Example4cg" class="form-control form-control-lg" />

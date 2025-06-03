@@ -39,13 +39,13 @@ Route::get('/kategori', function () {
     return view('kategori');
 })->name('kategori');
 
-Route::get('/index', function () {
-    return view('index');
-})->name('index');
-
 Route::get('/admin', function () {
-    return view('admin/index');
+    return view('admin/adminCustom');
 })->name('admin');
+
+Route::get('/pp', function () {
+    return view('admin/pendaftar/pp');
+})->name('pp');
 
 Route::get('/editor', function () {
     return view('admin/editor');

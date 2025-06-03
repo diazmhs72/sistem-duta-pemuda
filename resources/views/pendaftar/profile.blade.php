@@ -13,7 +13,7 @@
                                     alt="User profile picture" />
                             </div>
 
-                            <h3 class="profile-username text-center">Khafriza diaz</h3>
+                            <h3 class="profile-username text-center">User</h3>
 
                             <p class="text-muted text-center">Pemuda Pelopor</p>
 
